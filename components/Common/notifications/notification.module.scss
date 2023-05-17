@@ -1,0 +1,82 @@
+@import "../../../styles/variables.scss";
+
+.main_container {
+  position: relative;
+  background-color: #f5f5f5;
+
+  &_content {
+    padding-top: 46px;
+    padding-bottom: 36px;
+
+    &_inner {
+      h1 {
+        font-size: 35px;
+        font-weight: 600;
+        color: #1f1f1f;
+        font-family: $tertiairyFont;
+        margin-left: -16px;
+      }
+    }
+  }
+}
+
+.card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 17px 17px 14px 25px;
+  margin-top: 20px;
+  z-index: 2;
+
+  &_content {
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1px;
+
+      h3 {
+        font-family: $tertiairyFont;
+        font-weight: 600;
+        color: #000000;
+        font-size: 18px;
+        margin-left: 16px;
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-family: $tertiairyFont;
+        font-weight: 400;
+        color: #5e6282;
+        font-size: 14px;
+        margin-right: 12px;
+      }
+    }
+
+    p {
+      font-family: $tertiairyFont;
+      font-weight: 300;
+      color: #5e6282;
+      font-size: 14px;
+      margin-left: 16px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  .main_container_content_inner {
+    h1 {
+      font-size: 28px;
+    }
+  }
+}

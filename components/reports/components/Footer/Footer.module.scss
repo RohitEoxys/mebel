@@ -1,0 +1,24 @@
+.ftr_dt{
+    background-color: #0F2F62;
+    color: #fff;
+    height: 100px;
+    width: 700px;
+    .ftr_dtsc_1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .ftr_dtsc_2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .phne_nm_dt,.email_dt{
+            display: flex;
+            align-items: center;
+            margin:20px 20px 20px 20px
+        }
+    }
+}

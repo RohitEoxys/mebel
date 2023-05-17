@@ -1,0 +1,231 @@
+.main_container {
+  &_content {
+    &_page {
+      width: 29.7cm;
+      height: 21cm;
+      background: white;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0.5cm;
+      box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media print {
+    body,
+    .main_container_content_page {
+      margin: 0;
+      box-shadow: 0;
+    }
+  }
+}
+
+.header {
+  position: relative;
+
+  &_bgImage {
+    width: 100%;
+  }
+  &_logo {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
+}
+
+.content {
+  margin-left: 28px;
+  margin-right: 28px;
+
+  &_titles {
+    margin-top: 27px;
+    margin-bottom: 44px;
+
+    &_name {
+      margin-bottom: 12px;
+      div {
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #000000;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &_age {
+      margin-bottom: 12px;
+      display: flex;
+
+      div {
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #000000;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &_date {
+      div {
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #000000;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &_medicinelist_section {
+    h1 {
+      font-weight: 600;
+      font-size: 18px;
+      color: #284b8d;
+      text-transform: capitalize;
+    }
+
+    &_list_details {
+      font-weight: 500;
+      font-size: 15px;
+      color: #4f537a;
+      text-transform: capitalize;
+      margin: 18px 0px;
+
+      span {
+        font-weight: 300;
+        font-size: 14px;
+        color: #4f537a;
+        text-transform: capitalize;
+        line-height: 22px;
+      }
+    }
+    border-bottom: 1px solid #d3d3d3;
+  }
+}
+
+.diagnosis {
+  margin-top: 14px;
+  margin-bottom: 100px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #284b8d;
+    text-transform: capitalize;
+  }
+  div {
+    font-weight: 500;
+    font-size: 15px;
+    color: #4f537a;
+    text-transform: capitalize;
+
+    span {
+      font-weight: 300;
+      font-size: 14px;
+      color: #4f537a;
+      text-transform: capitalize;
+      line-height: 22px;
+    }
+  }
+}
+
+.bottom_section {
+  &_hrTag {
+    position: relative;
+
+    &_1 {
+      border: 1px solid #d3d3d3;
+      width: 300px;
+      position: absolute;
+      left: -28px;
+    }
+    &_2 {
+      border: 1px solid #d3d3d3;
+      width: 300px;
+      position: absolute;
+      right: -28px;
+    }
+  }
+}
+
+.dr_details {
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+
+  &_left {
+    margin-left: 20px;
+    h1 {
+      font-weight: 600;
+      font-size: 20px;
+      color: #000000;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #7b899c;
+      text-align: center;
+    }
+  }
+  &_right {
+    margin-right: 20px;
+    h1 {
+      font-weight: 600;
+      font-size: 20px;
+      color: #000000;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: #7b899c;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 24px;
+  background-color: #0f2f62;
+  h1 {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    padding-top: 16px;
+    padding-bottom: 11px;
+    text-transform: capitalize;
+  }
+  &_phone {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 16px;
+    margin-bottom: 11px;
+    text-transform: capitalize;
+  }
+  &_gmail {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 11px;
+    text-transform: capitalize;
+    margin-left: 44px;
+  }
+}

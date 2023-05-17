@@ -1,0 +1,68 @@
+.cht_sec {
+  margin: 50px 100px 50px 100px;
+  .cht_hdr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    .cht_hdng {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .srch_sec {
+      display: flex;
+      align-items: center;
+      .srch_br {
+        input {
+          height: 54px;
+          width: 353px;
+          border: transparent;
+          outline: none;
+          border-radius: 10px;
+          padding: 20px;
+        }
+        input::placeholder {
+          font-size: 14px;
+        }
+      }
+      .icn_secn {
+        background-color: #ed7b30;
+        padding: 12px 15px 12px 15px;
+        border-radius: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .chat_bdy {
+    background-color: #fff;
+    display: flex;
+    .side_bar {
+      width: 30%;
+      border-right: 1px solid #dddeee;
+      .crd {
+        display: flex;
+        padding:10px;
+        .img_sec {
+          .img {
+            img {
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+            }
+          }
+        }
+        .nm_cht {
+          .nm_sec {
+            font-size: 15px;
+            font-weight: 600;
+          }
+          .msg_sec {
+              font-size: 13px;
+            color: #5e6282;
+          }
+        }
+      }
+      
+    }
+  }
+}

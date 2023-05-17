@@ -1,0 +1,84 @@
+@import "../../../../styles/variables.scss";
+.main_container {
+  position: relative;
+  margin-top: 30px;
+
+  .inputFields {
+    padding: 50px 25px 25px 25px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+      color: #0f2f62;
+      font-family: $graphitmd;
+      margin-bottom: 36px;
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+    .input_1 {
+      margin-bottom: 10px;
+    }
+    .question_save_btn {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: right;
+
+      button {
+        background: #ed7b30;
+        border-radius: 200px;
+        border: none;
+        font-weight: 500;
+        font-size: 17px;
+        color: #ffffff;
+        padding: 12px 45px;
+
+        &:hover {
+          background-color: #f35709;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+  .inputFields {
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .addNewQuestion_btn {
+    text-align: center;
+
+    &_main {
+      width: 100%;
+      font-size: 15px !important;
+    }
+  }
+
+  .next_btn {
+    text-align: center;
+
+    &_main {
+      width: 100%;
+
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+  }
+}

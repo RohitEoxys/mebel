@@ -1,0 +1,47 @@
+.msg_crd {
+  margin: 50px 50px 50px 50px;
+  .hr_dt {
+    display: flex;
+    align-items: center;
+    color: #999db9;
+    justify-content: space-around;
+
+    .hr_ln {
+      width: 300px;
+      height: 1px;
+      border: 1px solid #dddeee;
+    }
+    .dt_sec {
+    }
+  }
+  .bd_br_crd {
+    margin: 25px 0px 50px 0px;
+
+    .crd {
+      display: flex;
+      .img_sec {
+        .img {
+          img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+          }
+        }
+      }
+      .nm_tm_sc {
+        .name {
+          font-size: 15px;
+          font-weight: 600;
+        }
+        .tme {
+          color: #5e6282;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .disply_msg{
+    font-weight: 600;
+    font-size: 24px;
+  }
+}

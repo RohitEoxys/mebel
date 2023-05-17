@@ -1,0 +1,19 @@
+.hdr_img{
+    position: relative;
+    z-index:-10000;
+   
+    img{
+        width: 700px;
+    }
+    .logo{
+        position: absolute;
+       z-index: +19999;
+       top: 10px;
+    img{
+        width: 200px;
+        height: 70px;
+    }
+     
+    }
+}
+   

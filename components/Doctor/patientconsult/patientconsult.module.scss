@@ -1,0 +1,412 @@
+@import "../../../styles/variables.scss";
+.background-design-1 {
+  position: absolute;
+  top: 103px;
+  right: 0px;
+  z-index: -1;
+  img {
+    overflow: hidden;
+  }
+}
+.section-1 {
+  margin: 50px 0px 50px 0px;
+  @media screen and (max-width: 767px) {
+    margin: 25px 15px 25px 15px;
+  }
+  .que-ans-crd {
+    background-color: #fcfbfa;
+    margin: 10px 10px 10px 10px;
+    padding: 25px 8px 25px 8px;
+    border-radius: 6px;
+    .question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .qstn-part {
+        .slno {
+          font-weight: 600;
+          color: #193b68;
+          font-size: 20px;
+          @media screen and (max-width: 767px) {
+            font-size: 16px;
+          }
+        }
+        .dot {
+          margin: 0px 10px 0px 0px;
+        }
+        .que-data {
+          color: #193b68;
+          font-weight: 500;
+          @media screen and (max-width: 767px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .answer {
+      .ans-head {
+        font-size: 15px;
+        color: #193b68;
+        font-weight: 600;
+      }
+      .semi-colon {
+        color: #193b68;
+        margin: 0px 10px 0px 5px;
+      }
+      .ans-details {
+        color: #292b40;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 32px;
+    font-weight: 500;
+    color: #193b68;
+    line-height: 39.46px;
+    letter-spacing: -0.3 px;
+    font-family: $graphitmd;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  .que-asked {
+    color: #7e83a7;
+    line-height: 24px;
+    padding: 10px 0px 10px 0px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      padding: 5px 0px 5px 0px;
+    }
+  }
+}
+.section-2 {
+  .main-div {
+    .heading-div {
+      display: flex;
+      justify-content: space-between;
+      .heading-text {
+        font-family: $graphitmd;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -0.3px;
+        color: #0f2f62;
+        @media (max-width: 520px) {
+          font-size: 22px;
+        }
+        @media (max-width: 394px) {
+          font-size: 18px;
+        }
+        @media (max-width: 350px) {
+          font-size: 18px;
+        }
+      }
+    }
+    .heading {
+      color: #4f537a;
+      font-weight: 500;
+      font-size: 15px;
+      margin: 20px 0px 10px 0px;
+    }
+    .search-div {
+      display: flex;
+      border: 1px solid #c1c1ea;
+      border-radius: 500px;
+      align-items: center;
+      position: relative;
+
+      img {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .heading-divs {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      color: #4f537a;
+      margin-top: 30px;
+      margin: 30px 0px 20px 0px;
+    }
+    .symptoms-div {
+      display: flex;
+
+      .sym-div {
+        display: flex;
+        flex-wrap: wrap;
+
+        .symptoms {
+          color: #4f537a;
+          font-size: 14px;
+          margin: 10px 0px 10px 0px;
+          @media screen and (max-width: 767px) {
+            width: 50%;
+          }
+          input[type="checkbox"] {
+            accent-color: #d8793a;
+          }
+          .checkbox-input {
+            margin: 0px 10px 0px 0px;
+          }
+        }
+      }
+      @media (max-width: 530px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    }
+    .search-2-div {
+      margin-top: 30px;
+
+      .search-2-div-1 {
+        width: 40%;
+        display: flex;
+        gap: 20px;
+        @media (max-width: 530px) {
+          flex-direction: column;
+          width: 100% !important;
+        }
+        @media (max-width: 991px) {
+          width: 100% !important;
+        }
+        .search-2-div-2 {
+          position: relative;
+          width: 100%;
+
+          border: 1px solid #c1c1ea;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          border-radius: 500px;
+          height: 57px;
+
+          @media (max-width: 530px) {
+            width: 100% !important;
+          }
+
+          input {
+            border: 1px solid transparent;
+            width: 70%;
+            outline: none;
+            &::placeholder {
+              color: #a7accf;
+              font-size: 14px;
+            }
+          }
+          img {
+            margin: 0px 10px 0px 10px;
+          }
+
+          .dropdownBox {
+            width: 100%;
+            position: absolute;
+            box-shadow: 0px 4px 30px 0px rgba(215, 178, 155, 0.1215686275);
+            background-color: #f5f5f5;
+            max-height: 114px;
+            top: 56px;
+            left: 0px;
+            z-index: 2;
+            overflow-y: auto;
+
+            border-radius: 5px;
+
+            &_content {
+              margin: 10px 0px 10px 0px;
+            }
+
+            .searchItem {
+              padding: 5px 22px;
+              font-size: 15px;
+              font-weight: 400;
+              color: #717175;
+              font-family: inherit;
+
+              &:hover {
+                background-color: #f5904e;
+                cursor: pointer;
+                color: #ffffff;
+                transition: all ease-in 0.1s;
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+        .add-btn-div {
+          display: flex;
+
+          @media (max-width: 530px) {
+            margin-inline: auto;
+          }
+          @media (max-width: 475px) {
+            margin-inline: auto;
+          }
+          @media (max-width: 375px) {
+            margin-inline: auto;
+          }
+          @media (max-width: 320px) {
+            margin-inline: auto;
+          }
+
+          .search-btn-2 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #ffffff;
+            width: 136px;
+            height: 57px;
+            background: #0f2f62;
+            border: 1px solid #0f2f62;
+            border-radius: 500px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+              margin: 0px 15px 0px 10px;
+            }
+            @media (max-width: 530px) {
+            }
+          }
+        }
+      }
+    }
+    .last-btn-div {
+      @media (max-width: 530px) {
+        text-align: center;
+      }
+      .last-btn {
+        width: 256px;
+        height: 58px;
+
+        background: #0f2f62;
+        border: 1px solid #0f2f62;
+        border-radius: 500px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+
+        margin-top: 37px;
+        margin-bottom: 57px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.add_btn {
+  padding: 9px 50px !important;
+}
+
+.diseaseSearchInput {
+  position: relative;
+  width: 100%;
+
+  input {
+    border: 1px solid transparent;
+    width: 90%;
+    outline: none;
+    height: 57px;
+    &::placeholder {
+      color: #c1c1ea;
+      font-size: 14px;
+    }
+  }
+
+  .dropdownBox {
+    width: 102%;
+    position: absolute;
+    box-shadow: 0px 4px 30px 0px rgba(215, 178, 155, 0.1215686275);
+    background-color: #f5f5f5;
+    top: 59px;
+    left: -31px;
+    z-index: 2;
+    max-height: 250px;
+    overflow-y: auto;
+
+    border-radius: 5px;
+
+    &_content {
+      margin: 10px 0px 10px 0px;
+    }
+
+    .searchItem {
+      padding: 5px 22px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #717175;
+      font-family: inherit;
+
+      &:hover {
+        background-color: #f5904e;
+        cursor: pointer;
+        color: #ffffff;
+        transition: all ease-in 0.1s;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.selectedItems {
+  margin-top: 19px;
+
+  &_items {
+    padding: 10px 21px;
+    background-color: #ebf3ff;
+    border-radius: 500px;
+    color: #0f2f62;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+
+    img {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.checkbox {
+  :global {
+    .ant-checkbox-wrapper {
+      color: #5e6285;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .ant-checkbox-inner {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+.no_data {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  img {
+    height: 200px;
+    width: 300px;
+
+    @media (max-width: 768px) {
+      height: 200px;
+      width: 300px;
+    }
+    @media (max-width: 475px) {
+      height: 150px;
+      width: 250px;
+    }
+  }
+}

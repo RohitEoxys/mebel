@@ -1,0 +1,230 @@
+@import "../../../styles/variables.scss";
+
+.main_container {
+  :global {
+    .table-responsive {
+      overflow-x: unset;
+    }
+  }
+
+  .main_container_table {
+    min-width: 770px;
+    overflow-x: unset !important;
+  }
+
+  &_heading {
+    &-title {
+      h1 {
+        @media (max-width: 768px) {
+          font-size: 16px !important;
+          margin-right: 6px;
+          margin-top: 3px;
+          min-width: max-content;
+        }
+      }
+    }
+  }
+
+  thead {
+    th {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #5e6285;
+      vertical-align: middle;
+    }
+  }
+
+  tbody {
+    tr {
+      min-width: 50%;
+    }
+    td {
+      padding: 12px 25px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      vertical-align: middle;
+      color: #7e83a7;
+      min-width: 100px;
+      text-align: left;
+
+      @media (max-width: 768px) {
+        padding: 2px 10px !important;
+      }
+
+      input {
+        margin-right: 8px;
+        height: 17px;
+        width: 17px;
+        accent-color: #ed7b30;
+
+        :checked {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &_heading {
+    margin-bottom: 10px;
+    min-width: 770px;
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #193b68;
+        font-family: $graphitmd;
+
+        @media (max-width: 992px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.options {
+  display: flex;
+  overflow: auto;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+    background: #af1010;
+  }
+
+  &-1 {
+    &-main1 {
+      border-radius: 500px;
+      padding-left: 26px;
+    }
+  }
+  &-2 {
+    margin-left: 20px;
+    &-main2 {
+      border-radius: 500px;
+      padding-left: 35px;
+    }
+  }
+}
+
+.main_container {
+  &_table {
+    @media (max-width: 842px) {
+      min-width: 616px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+
+  &_question {
+    display: inline;
+    width: unset;
+
+    &_main {
+      font-weight: 400 !important;
+      color: #ffffff !important;
+      font-size: 14px !important;
+
+      @media (max-width: 992px) {
+        padding: 7px 16px !important;
+        font-size: 12px !important;
+      }
+    }
+  }
+  &_send_msg {
+    display: inline;
+    width: unset;
+
+    &_main {
+      font-weight: 400 !important;
+      color: #ffffff !important;
+      font-size: 14px !important;
+
+      @media (max-width: 992px) {
+        padding: 7px 16px !important;
+        font-size: 12px !important;
+      }
+    }
+  }
+}
+
+.add_btn {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #ffffff !important;
+  padding: 10px 50px !important;
+}
+
+.checkbox {
+  :global {
+    .ant-checkbox-wrapper {
+      color: #5e6285;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .ant-checkbox-inner {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+.table_heading_1 {
+  width: 2%;
+  padding: 14px 17px !important;
+  text-align: center;
+}
+.table_heading_2 {
+  width: 25%;
+  padding: 12px 25px !important;
+}
+.table_heading_3 {
+  width: 20%;
+  padding: 12px 26px !important;
+}
+.table_heading_4 {
+  width: 20%;
+  padding: 12px 26px !important;
+}
+.table_heading_5 {
+  width: 20%;
+  padding: 12px 26px !important;
+}
+.table_heading_6 {
+  width: 13%;
+  padding: 12px 32px !important;
+}
+
+.col_1 {
+  text-align: center !important;
+}
+
+.col_6 {
+  display: flex;
+  gap: 16px;
+}
+
+.eyeIcon {
+  cursor: pointer;
+}
+.medicalStudiesPopupInput {
+  border-radius: 12px !important;
+}
+
+.errorText {
+  p {
+    margin-left: 0px !important;
+  }
+}

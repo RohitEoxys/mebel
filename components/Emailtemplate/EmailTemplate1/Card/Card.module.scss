@@ -1,0 +1,13 @@
+.card {
+  .crd_hdr {
+    font-weight: 500;
+    color: #675c55;
+  }
+  .crd_dta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+  }
+}

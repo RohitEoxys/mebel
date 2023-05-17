@@ -1,0 +1,22 @@
+.dtcr_sign {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+
+  .dtcr_abt2,
+  .dtcr_abt1 {
+    border-top: 1px solid #d3d3d3;
+    width: 200px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+
+    .dctr_nm {
+      font-weight: 600;
+    }
+    .dctr_prftn {
+      color: #7b899c;
+      font-size: 14px;
+    }
+  }
+}

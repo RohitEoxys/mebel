@@ -1,0 +1,122 @@
+@import "../../../styles/variables.scss";
+
+.main_container {
+  position: relative;
+
+  &_content {
+    padding-top: 46px;
+    margin-bottom: 92px;
+  }
+
+  &-right {
+    background-color: #ffffff;
+
+    padding: 20px 22px;
+    box-shadow: 0px 4px 40px 0px #ed7b301a;
+
+    h2 {
+      font-size: 26px;
+      color: #4b4c52;
+      font-weight: 600;
+    }
+    h3 {
+      color: #1f1f1f;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.removeButton {
+  display: none !important;
+}
+
+.paypal {
+  display: inline;
+  padding: 8px 12px;
+  box-shadow: rgba(113, 159, 151, 0.1) 0px 8px 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(113, 159, 151, 0.1);
+
+  img {
+  }
+}
+
+.accounts {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.subtotal {
+  font-size: 16px;
+  font-weight: 400;
+  color: #545454;
+}
+.price {
+  font-size: 16px;
+  font-weight: 400;
+  color: #545454;
+}
+.border {
+  border-bottom: 1px solid #d6e1e0;
+  margin: 20px 0;
+}
+
+.total {
+  &-title {
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &-price {
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.paynowBtn {
+  justify-content: left !important;
+  margin-top: 39px;
+  margin-bottom: 20px;
+
+  &-main {
+    width: 28%;
+    padding: 13px 12px !important;
+    font-weight: 600;
+    color: #ffffff;
+
+    @media (max-width: 1268px) {
+      width: 46%;
+    }
+    @media (max-width: 992px) {
+      width: 60%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.subscriptionCard {
+  @media (max-width: 992px) {
+    padding: 29px 19px !important;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

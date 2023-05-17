@@ -1,0 +1,130 @@
+@import "../../../styles/variables.scss";
+
+.main_container {
+  border-color: "#dcdcdc";
+
+  :global {
+    .table-responsive {
+      overflow-x: unset;
+    }
+  }
+
+  thead {
+    th {
+      padding: 13px 10px 13px 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #5e6285;
+    }
+  }
+
+  tbody {
+    tr {
+      min-width: 50%;
+    }
+    td {
+      padding: 8px 20px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      vertical-align: middle;
+      color: #7e83a7;
+      min-width: 100px;
+      text-align: left;
+      min-height: 51px;
+
+      @media (max-width: 768px) {
+        padding: 2px 10px !important;
+      }
+
+      input {
+        margin-right: 8px;
+        height: 17px;
+        width: 17px;
+        accent-color: #ed7b30;
+
+        :checked {
+          color: white;
+        }
+      }
+    }
+
+    tr td:last-child {
+      width: 1%;
+    }
+  }
+
+  :global {
+    .ant-checkbox-wrapper {
+      color: #5e6285;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .ant-checkbox-inner {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+  align-items: center;
+}
+
+.th_1 {
+  width: 40%;
+}
+.th_2 {
+  width: 60%;
+}
+// .th_3 {
+//   width: 10%;
+// }
+
+.options-box-1_select {
+  :global {
+    .ant-select-selector {
+      height: 35px !important;
+      border-color: #dcdcdc !important;
+      border-radius: 3px !important;
+      border: 1px solid #dcdcdc !important;
+    }
+
+    .ant-select-selection-item {
+      padding-inline-end: 40px !important;
+      font-family: inherit;
+      font-weight: 400 !important;
+      color: #5e6285;
+      font-size: 14px;
+      line-height: 34px !important;
+      font-family: $primaryFont;
+    }
+
+    .ant-select-arrow {
+      color: #5e6285 !important;
+    }
+    .ant-select-selection-item-option {
+      background-color: #ed7b30;
+    }
+    .anticon {
+      font-size: 15px !important;
+    }
+    .antdropdown {
+      // overflow: auto;
+      color: #ed7b30 !important;
+    }
+  }
+}
+
+.selectoptions {
+  :global {
+    .rc-virtual-list-scrollbar-thumb {
+      background-color: red !important;
+    }
+  }
+}

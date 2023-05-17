@@ -1,0 +1,54 @@
+.no_data_img {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.main_container {
+  thead {
+    th {
+      padding: 13px 10px 13px 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #5e6285;
+    }
+  }
+
+  tbody {
+    tr {
+      min-width: 50%;
+    }
+    td {
+      padding: 10px 15px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      vertical-align: middle;
+      color: #7e83a7;
+      min-width: 150px;
+      text-align: left;
+    }
+
+    tr td:last-child {
+      width: 1%;
+    }
+  }
+}
+
+.icons {
+  margin-left: 5px;
+  img {
+    cursor: pointer;
+  }
+}
+.time_at {
+  display: block;
+  color: #7e83a7;
+  font-weight: 300;
+  font-size: 14px;
+}

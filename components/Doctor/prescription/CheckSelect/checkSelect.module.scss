@@ -1,0 +1,22 @@
+.ant-select-selection-item .ant-checkbox {
+  display: none;
+}
+.ant-select-dropdown .ant-select-item-option-state {
+  display: none;
+}
+
+.select {
+  width: 80vw;
+  margin-bottom: 10px;
+
+  :global {
+    .ant-select-selector {
+      border-radius: 500px;
+      padding: 8px 0;
+    }
+
+    .ant-select-selection-overflow {
+      padding-left: 22px;
+    }
+  }
+}

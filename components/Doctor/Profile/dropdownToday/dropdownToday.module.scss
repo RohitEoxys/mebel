@@ -1,0 +1,105 @@
+.defaultSelect {
+  margin-top: -3px;
+  &-icon {
+    margin-left: 13px;
+    line-height: 0;
+    margin-right: 10px;
+  }
+
+  &-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 50px;
+    color: #000000;
+
+    @media (max-width: 992px) {
+      margin-right: 0px;
+      font-size: 12px;
+    }
+  }
+}
+.defaltplaceholder {
+}
+.languagePlaceholder {
+  margin-left: 0px !important;
+
+  // margin-left: 20px !important;
+  color: black !important;
+  font-weight: 400 !important;
+  font-size: 14px;
+}
+.lanMainClass {
+  padding: 0px;
+  margin: 0;
+  border-color: #ed7b30 !important;
+  width: fit-content;
+  height: 45px !important;
+
+  @media (max-width: 992px) {
+    width: 130px !important;
+    height: 41px !important;
+  }
+
+  i {
+    top: 28%;
+
+    @media (max-width: 992px) {
+      top: 10px;
+    }
+  }
+}
+
+.lngBoxClass {
+  text-align: center;
+  padding: 0px !important;
+  width: 130px;
+  margin-top: -3px;
+
+  @media (max-width: 992px) {
+    margin: -5px;
+  }
+
+  i {
+    color: #ed7b30;
+  }
+}
+.startlngBoxClass {
+  top: -6px !important;
+  max-height: 130px;
+  overflow-y: auto;
+  padding: 10px 0;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #c5c5c5;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a8a29e;
+  }
+}
+.lanDropdown_container_content-label {
+  cursor: pointer;
+}
+.lanDropdown_container {
+  max-height: 200px;
+}
+
+.selectBoxItems {
+  font-size: 14px;
+  color: #75706c;
+  cursor: pointer;
+  padding: 5px 20px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #ed7b30;
+    border-radius: 5px;
+  }
+}

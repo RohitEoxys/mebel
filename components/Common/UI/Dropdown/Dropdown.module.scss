@@ -1,0 +1,133 @@
+.lanDropdown_container {
+  padding: 10px 20px;
+
+  &_content {
+    cursor: pointer;
+
+    &-icon {
+      margin-right: 14px;
+    }
+    &-label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+.hrTag {
+  border-bottom: 0.5px solid #deb7a3;
+  margin: 10px auto;
+  width: 120%;
+}
+
+.defaultSelect {
+  margin-top: -3px;
+  &-icon {
+    margin-left: 20px;
+    line-height: 0;
+    margin-right: 10px;
+  }
+
+  &-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 50px;
+  }
+}
+
+.languagePlaceholder {
+  margin-left: 0px !important;
+  color: black !important;
+  font-weight: 500 !important;
+}
+.lanMainClass {
+  padding: 0px;
+  margin: 0;
+  border-color: #ed7b30 !important;
+  width: 130px !important;
+  height: 45px !important;
+}
+
+.lngBoxClass {
+  padding: 0px !important;
+  margin: 0;
+
+  i {
+    color: #ed7b30;
+  }
+}
+.startlngBoxClass {
+  top: -6px !important;
+}
+
+.signinPlaceholder {
+  color: #ed7b30 !important;
+  font-weight: 500 !important;
+  line-height: 45px !important;
+}
+
+.signinMainClass {
+  padding: 0px;
+  margin: 0;
+  border-color: #ed7b30 !important;
+  width: 130px !important;
+  height: 45px !important;
+}
+
+.siginStartDropClass {
+  width: 188px !important;
+  padding: 10px 20px !important;
+  top: -6px !important;
+  left: -38px !important;
+
+  @media (max-width: 992px) {
+    left: 0px !important;
+  }
+}
+
+.signinDropdown_container {
+  &_content {
+    cursor: pointer;
+
+    &-icon {
+      margin-left: 22px;
+    }
+    &-label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.signinhrTag {
+  border-bottom: 0.5px solid #dde0e4;
+  margin: 10px auto;
+}
+
+.singupPlaceholder {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  line-height: 45px !important;
+}
+
+.signupMainClass {
+  background-color: #ed7b30;
+  padding: 0px;
+  margin: 0;
+  border-color: #ed7b30 !important;
+  width: 130px !important;
+  height: 45px !important;
+}
+.signupStartDropClass {
+  width: 202px !important;
+  padding: 10px 20px !important;
+  top: -3px !important;
+  left: -40px !important;
+
+  @media (max-width: 992px) {
+    left: -52px !important;
+  }
+}

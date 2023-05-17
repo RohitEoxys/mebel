@@ -1,0 +1,102 @@
+.signinPlaceholder {
+  color: #ed7b30 !important;
+  font-weight: 500 !important;
+  line-height: 40px !important;
+}
+
+.signinMainClass {
+  padding: 0px;
+  margin: 0;
+  border-color: #ed7b30 !important;
+  width: 130px !important;
+  height: 45px !important;
+}
+
+.siginStartDropClass {
+  width: 188px !important;
+  padding: 10px 20px !important;
+  top: -6px !important;
+  left: -38px !important;
+
+  @media (max-width: 992px) {
+    left: 0px !important;
+  }
+}
+
+.signinDropdown_container {
+  &_content {
+    cursor: pointer;
+    position: relative;
+
+    &-icon {
+      position: absolute;
+      right: 0px;
+    }
+    &-label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #0f2f62;
+    }
+  }
+}
+
+.signinhrTag {
+  border-bottom: 0.5px solid #dde0e4;
+  margin: 10px auto;
+}
+
+.singupPlaceholder {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  line-height: 40px !important;
+  margin-left: 15px;
+
+  @media (max-width: 992px) {
+    line-height: 37px !important;
+    font-size: 12px;
+  }
+}
+
+.signupMainClass {
+  background-color: #ed7b30;
+  padding: 0px;
+  margin: 0;
+  border-color: #ed7b30 !important;
+  width: 150px !important;
+  height: 45px !important;
+
+  @media (max-width: 992px) {
+    width: 130px !important;
+    height: 41px !important;
+  }
+}
+.signupStartDropClass {
+  width: 236px !important;
+  padding: 10px 20px !important;
+  top: -3px !important;
+  left: -40px !important;
+
+  @media (max-width: 992px) {
+    left: -52px !important;
+  }
+}
+
+.CustomBoxClass {
+  i {
+    top: 28%;
+
+    @media (max-width: 992px) {
+      top: 23%;
+    }
+  }
+}
+.add_btn {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: #ffffff !important;
+  padding: 10px 50px !important;
+}
+.medicalStudiesPopupInput {
+  border-radius: 12px !important;
+}

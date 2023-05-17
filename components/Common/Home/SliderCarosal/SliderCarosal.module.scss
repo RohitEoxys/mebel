@@ -1,0 +1,393 @@
+.screen_back_div {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+  .screen_second_div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #faf4f4;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .avatar_image {
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    img {
+      height: 275px;
+      width: 200px;
+    }
+  }
+  .second_screen_div {
+    display: flex;
+    gap: 40px;
+    padding: 30px 0px;
+    .app_screen_content {
+      // padding-top: 50px;
+      .app_screen_head {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 52px;
+        text-transform: capitalize;
+        color: #292b40;
+      }
+      .para_content {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #655951;
+        padding-top: 15px;
+        .para_imp {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 27px;
+          text-transform: capitalize;
+          color: #655951;
+        }
+      }
+      .signup_btn {
+        width: 151px;
+        height: 48px;
+        background: #ed7b30;
+        border: 1px solid #ed7b30;
+        border-radius: 500px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-top: 25px;
+      }
+    }
+    .doctor_list_home {
+      img {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .carosal_comma {
+    position: relative;
+    .comma1 {
+      position: absolute;
+      top: 165px;
+      left: -55px;
+      overflow: hidden;
+      img {
+        height: auto;
+        width: 80%;
+      }
+    }
+    .comma2 {
+      position: absolute;
+      bottom: 165px;
+      right: -65px;
+      overflow: hidden;
+      img {
+        height: auto;
+        width: 80%;
+      }
+    }
+    .clients_feedback_box {
+      padding-bottom: 50px;
+      padding-top: 10px;
+      .client_feedback {
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #ed7b30;
+        padding-top: 40px;
+        padding-bottom: 5px;
+      }
+      .what_patient {
+        text-align: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 55px;
+        text-transform: capitalize;
+        color: #292b40;
+        padding-bottom: 15px;
+        .mebel_app {
+          color: #ed7b30;
+        }
+      }
+      .feedBack_boxes {
+        padding: 20px 0px;
+        width: 100%;
+        // .slick-slide {
+        //   margin: 0 27px !important;
+        //   .slick-arrow {
+        //     background: #ed7b30 !important;
+        //     border: 1px solid #ffffff !important;
+        //     box-shadow: 0px 4px 65px rgba(1, 120, 204, 0.15) !important;
+        //   }
+        //   .slick-list {
+        //     margin: 0 -27px !important;
+        //   }
+        // }
+
+        /* the parent */
+        .box_div {
+          // width: 400px !important;
+          // height: 245px;
+          background: #faf4f4;
+          border: 1px solid #f2d5d5;
+          border-radius: 10px;
+          padding: 30px 28px 18px 22px;
+          height: 250px;
+          @media screen and (max-width: 1199px) {
+            padding: 20px 15px 5px 10px;
+          }
+
+          .box_content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            .reviewer_img {
+              img {
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+            .box_head {
+              .client_name {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                text-transform: capitalize;
+                color: #292b40;
+              }
+              .client_desigination {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-transform: capitalize;
+                color: #44465a;
+              }
+            }
+          }
+          .client_para {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 27px;
+            padding-top: 20px;
+            text-transform: capitalize;
+            color: #292b40;
+          }
+          .feedback_time_star {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 15px 10px 16px 1px;
+            .feedback_time {
+              font-weight: 300;
+              font-size: 14px;
+              text-transform: capitalize;
+              color: #787985;
+            }
+          }
+        }
+        :global {
+          .slick-arrow:before {
+            content: "" !important;
+          }
+
+          .slick-slide {
+            padding: 4px !important;
+          }
+          .slick-dots li button:before {
+            font-size: 12px !important;
+          }
+
+          .slick-arrow:before {
+            content: "" !important;
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute;
+            top: 0px;
+            left: 0;
+          }
+
+          .slick-next:before {
+            // background: url("../../../../../assets/images/slick_carouselBtn-right.svg") !important;
+            background: url("../../../../assets/images/slick_carouselBtn-right.svg") !important;
+            background-size: contain !important;
+          }
+
+          .slick-prev:before {
+            background: url("../../../../assets/images/slick_carouselBtn-left.svg") !important;
+            background-size: contain !important;
+          }
+
+          .slick-arrow {
+            z-index: 2 !important;
+            width: 70px !important;
+            height: 70px !important;
+            overflow: hidden;
+            @media screen and (max-width: 1225px) {
+              width: 60px !important;
+              height: 60px !important;
+            }
+            @media screen and (max-width: 1035px) {
+              width: 50px !important;
+              height: 50px !important;
+            }
+          }
+
+          .slick-next {
+            right: -62px;
+            // top: 58%;
+            @media screen and (max-width: 1425px) {
+              right: -50px;
+            }
+            @media screen and (max-width: 1425px) {
+              right: -40px;
+            }
+          }
+
+          .slick-prev {
+            left: -62px;
+            @media screen and (max-width: 1425px) {
+              left: -50px;
+            }
+            @media screen and (max-width: 1425px) {
+              left: -40px;
+            }
+            // top: 58%;
+          }
+
+          .slick-arrow:before {
+            opacity: 1 !important;
+            transform: scale(2.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* responsive design of home page start */
+@media screen and (max-width: 1600px) {
+  .screen_back_div {
+    .avatar_image {
+      img {
+        height: 250px;
+        width: 170px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1565px) and (min-width: 1500px) {
+  .screen_back_div {
+    .avatar_image {
+      img {
+        height: 220px;
+        width: 130px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1499px) and (min-width: 1400px) {
+  .screen_back_div {
+    .second_screen_div {
+      padding-left: 35px;
+    }
+    .avatar_image {
+      bottom: -19px;
+      img {
+        height: 185px;
+        width: 117px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1399px) {
+  .screen_back_div {
+    .second_screen_div {
+      .screen_content {
+        padding-top: 35px;
+      }
+      .doctor_list_home {
+        img {
+          height: 100%;
+        }
+      }
+      .app_screen_content {
+        .signup_btn {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .client_feedback {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .screen_back_div {
+    .carosal_comma {
+      .clients_feedback_box {
+        .feedBack_boxes {
+          :global {
+            .slick-arrow {
+              width: 55px !important;
+              height: 55px !important;
+            }
+            .slick-next {
+              right: -38px;
+            }
+
+            .slick-prev {
+              left: -38px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .screen_back_div {
+    .carosal_comma {
+      .clients_feedback_box {
+        padding-bottom: 50px;
+        .feedBack_boxes {
+          .box_div {
+            padding: 15px 15px 0px 15px;
+            .feedback_time_star {
+              flex-wrap: wrap;
+            }
+          }
+          :global {
+            .slick-next {
+              display: none !important;
+            }
+
+            .slick-prev {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .carosal_comma {
+    .comma1 {
+      display: none;
+    }
+    .comma2 {
+      display: none;
+    }
+  }
+}

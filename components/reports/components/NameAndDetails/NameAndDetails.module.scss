@@ -1,0 +1,25 @@
+.nm_dtls {
+  margin: 50px 0px 50px 50px;
+  .nm_dtls_sc1,
+  .nm_dtls_sc1 > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .ttl {
+      font-weight: 500;
+      font-size: 14px;
+      width: 50px;
+    }
+    .dta {
+      font-size: 13px;
+    }
+
+    .age {
+      margin: 20px 50px 20px 0px;
+    }
+    .gndr {
+      margin: 20px 50px 20px 50px;
+    }
+  }
+}

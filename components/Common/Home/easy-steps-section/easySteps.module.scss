@@ -1,0 +1,233 @@
+@import "../../../../styles/variables.scss";
+
+.main_container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+
+  .zigzag_div {
+    position: absolute;
+    bottom: -185px;
+    right: -130px;
+    overflow: hidden;
+    img {
+      overflow: hidden;
+    }
+  }
+
+  &_content {
+    // width: 80%;
+    margin: auto;
+    position: relative;
+  }
+
+  .main_bg {
+    height: 100%;
+    background-size: cover;
+    background-image: url("../../../../assets/images/fourth_section_bg.png");
+    background-repeat: no-repeat;
+    height: 306px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    .left-heading {
+      width: 30%;
+      margin-left: 40px;
+
+      h2 {
+        padding-top: 52px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 46px;
+        color: #ffffff;
+        font-family: $tertiairyFont;
+      }
+    }
+
+    .middle-heading {
+      width: 30%;
+
+      h5 {
+        padding-top: 63px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: #ffffff;
+        font-family: $tertiairyFont;
+      }
+    }
+
+    .right-heading {
+      width: 20%;
+
+      &-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 36px;
+        padding-right: 10px;
+      }
+
+      .getConsulationBtn {
+        background-color: #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: $tertiairyFont;
+        line-height: 21px;
+        color: #ed7b30;
+        width: 80%;
+        border-radius: 100px;
+        border: none;
+        padding: 12px 0;
+      }
+
+      .doConsulationBtn {
+        background-color: #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: $tertiairyFont;
+        color: #ed7b30;
+        margin-top: 18px;
+        width: 80%;
+        border-radius: 100px;
+        border: none;
+        padding: 12px 0;
+      }
+    }
+  }
+  .remove_dots {
+    .comma_left {
+      background-image: url("../../../../assets/images/comma2.png");
+    }
+    .comma_right {
+      background-image: url("../../../../assets/images/comma1.png");
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .main_container {
+    .main_bg {
+      .right-heading {
+        width: 26%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main_container {
+    .zigzag_div {
+      display: none;
+    }
+    .main_bg {
+      .left-heading {
+        width: 33%;
+
+        h2 {
+          padding-top: 40px;
+          font-weight: 600;
+          font-size: 24px;
+        }
+      }
+
+      .middle-heading {
+        width: 33%;
+
+        h5 {
+          padding-top: 42px;
+          font-weight: 400;
+          font-size: 13px;
+        }
+      }
+
+      .right-heading {
+        width: 33%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_container {
+    margin-bottom: 280px;
+    .main_bg {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding-bottom: 40px;
+
+      .left-heading {
+        width: 100%;
+        margin-left: 0;
+
+        h2 {
+          padding-top: 40px;
+          font-weight: 600;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+
+      .middle-heading {
+        width: 100%;
+
+        h5 {
+          padding-top: 0px;
+          font-weight: 400;
+          font-size: 13px;
+          padding-right: 30px;
+          padding-left: 37px;
+        }
+      }
+
+      .right-heading {
+        width: 100%;
+
+        &-buttons {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 25px;
+          justify-content: center;
+          gap: 15px;
+          padding: 0px 25px;
+          .doConsulationBtn {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .main_container {
+    .main_bg {
+      .right-heading {
+        &-buttons {
+          flex-direction: column;
+          margin-top: 2px;
+        }
+      }
+
+      .left-heading {
+        h2 {
+          padding: 0 15px;
+          line-height: 33px;
+          margin-top: 18px;
+          text-align: start;
+        }
+      }
+
+      .middle-heading {
+        h5 {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}

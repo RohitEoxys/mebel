@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+
+.mainContainer {
+  padding: 29px 53px;
+  border-radius: 3%;
+  margin-right: 44px;
+  box-shadow: 0px 4px 40px 0px #ed7b301a;
+  margin-bottom: 44px;
+
+  @media (max-width: 992px) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: $secondaryFont;
+    font-weight: 500;
+    font-size: 26px;
+    color: #3f3e3e;
+    margin-bottom: 21px;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #505967;
+    margin-bottom: 21px;
+  }
+}
+
+.details {
+  margin-bottom: 17px;
+  display: flex;
+
+  h6 {
+    font-weight: 300;
+    font-size: 14px;
+    color: #193b68;
+    margin-left: 13px;
+  }
+}
+
+.buyplanbtn {
+  justify-content: left;
+  margin-top: 42px;
+  // margin-bottom: 32px;
+
+  @media (max-width: 768px) {
+    width: 54%;
+  }
+  @media (max-width: 500px) {
+    width: 70%;
+    margin-top: 21px;
+  }
+  @media (max-width: 400px) {
+    width: 80%;
+    margin-top: 21px;
+  }
+
+  &_main {
+    width: 100%;
+    font-size: 18px;
+    font-family: $secondaryFont;
+    font-weight: 500;
+    padding: 13px 20px !important;
+  }
+}

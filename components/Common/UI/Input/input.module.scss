@@ -1,0 +1,102 @@
+.form-control {
+  ::placeholder {
+    font-weight: 400;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #a7accf;
+    padding-left: 6px;
+  }
+
+  p {
+    color: rgb(235, 48, 48);
+    margin-left: 38px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.input_container {
+  textarea {
+    border: 1px solid #c1c1ea;
+    width: 100%;
+    border-radius: 12px;
+    resize: none;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  textarea::placeholder {
+    color: #a7accf;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+.form-control label {
+  font-weight: 400;
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 21px;
+  display: block;
+  color: #4f537a;
+}
+
+.form-control input {
+  border: 1px solid #c1c1ea;
+  border-radius: 500px;
+  padding: 13px;
+  font-weight: 400;
+  color: #4f537a;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  outline-color: #ed7b30;
+
+  &:disabled {
+    background: #f3efef;
+    cursor: not-allowed;
+  }
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  // outline: none;
+}
+
+.input_container {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+  }
+}
+
+.input_container_invalid {
+  label {
+    color: rgb(128, 44, 44) !important;
+  }
+}
+
+// .form-control--invalid label,
+// .form-control--invalid p {
+//   color: red;
+//   text-align: left;
+// }
+
+// .form-control--invalid input,
+// .form-control--invalid textarea {
+//   border-color: red;
+//   background: #ffd1d1;
+// }

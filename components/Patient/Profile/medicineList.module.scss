@@ -1,0 +1,74 @@
+@import "../../../styles/variables.scss";
+
+.main_container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #193b68;
+    font-family: $secondaryFont;
+    margin-bottom: 18px;
+  }
+
+  .no_data_found {
+    text-align: center;
+    .no_data_found_div {
+      width: 25%;
+      margin: auto;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .no_data_message {
+      font-size: 32px;
+      font-weight: 600;
+      padding-bottom: 20px;
+    }
+  }
+
+  thead {
+    th {
+      padding: 13px 10px 13px 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #5e6285;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    tr {
+      min-width: 50%;
+    }
+    td {
+      padding: 10px 15px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      vertical-align: middle;
+      color: #7e83a7;
+      min-width: 150px;
+      text-align: center;
+    }
+  }
+
+  tr td:last-child {
+    width: 1%;
+  }
+}
+
+.icons {
+  img {
+    cursor: pointer;
+  }
+}

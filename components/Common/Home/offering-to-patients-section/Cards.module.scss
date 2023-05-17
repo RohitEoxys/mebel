@@ -1,0 +1,54 @@
+.main_container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 23%;
+  padding: 10px;
+  &_content {
+    display: flex;
+    flex-direction: column;
+
+    .card_img_div {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 23px;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: #292b40;
+      margin-top: 15px;
+      margin-bottom: 3px;
+    }
+    h6 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #898989;
+      padding-right: 15px;
+    }
+  }
+}
+
+.testimonials {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .main_container {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main_container {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main_container {
+    width: 100%;
+  }
+}

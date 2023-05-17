@@ -1,0 +1,24 @@
+.email_tmp_design {
+  display: flex;
+  justify-content: center ;
+  height: 100vh;
+  .orng_bg {
+    background-color: #ed7b30;
+    height: 150px;
+    width: 443px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   padding-top: 10px;
+    z-index: 99;
+    .upr_bg_dt {
+      position: absolute;
+      background-color: #fff;
+      z-index:-100;
+      top: 90px;
+      height: 500px;
+      width: 90%;
+      box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

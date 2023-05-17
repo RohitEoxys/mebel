@@ -1,0 +1,229 @@
+@import '../../../../../styles/variables.scss';
+.main_container {
+  width: 95%;
+  position: absolute;
+  top: 142px;
+  left: 30px;
+
+  .crosal_content {
+    .card_div {
+      background: #ffffff;
+      box-shadow: rgb(237 123 48 / 9%) 0px 7px 29px 0px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding-top: 30px;
+      padding-bottom: 25px;
+
+      .card_img {
+        background: #598ded26;
+        box-shadow: 0px 4px 48px rgba(151, 135, 255, 0.12);
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 15px;
+        width: 72px;
+        height: 71px;
+
+        img {
+          position: absolute;
+          top: 15px;
+          right: 19px;
+        }
+      }
+
+      .card_head {
+        font-family: $tertiairyFont;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #151515;
+        padding: 15px 15px 0 15px;
+        text-align: center;
+      }
+
+      .card_para {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #898989;
+        padding: 10px 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  :global {
+    .slick-arrow:before {
+      content: "" !important;
+    }
+
+    .slick-slide {
+      padding: 2px !important;
+    }
+
+    .slick-arrow:before {
+      content: "" !important;
+      width: 100% !important;
+      height: 100% !important;
+      position: absolute;
+      top: 0px;
+      left: 0;
+    }
+
+    .slick-next:before {
+      background: url("../../../../../assets/images/slick_carouselBtn-right.svg") !important;
+      background-size: contain !important;
+    }
+
+    .slick-prev:before {
+      background: url("../../../../../assets/images/slick_carouselBtn-left.svg") !important;
+      background-size: contain !important;
+    }
+
+    .slick-arrow {
+      z-index: 2 !important;
+      width: 70px !important;
+      height: 70px !important;
+      overflow: hidden;
+    }
+
+    .slick-next {
+      right: -24px;
+      top: 58%;
+    }
+
+    .slick-prev {
+      left: -24px;
+      top: 58%;
+    }
+
+    .slick-arrow:before {
+      opacity: 1 !important;
+      transform: scale(2.5);
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .main_container {
+    :global {
+      .slick-next {
+        top: 54% !important;
+      }
+      .slick-prev {
+        top: 54% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .main_container {
+    left: 21px;
+    :global {
+      .slick-next {
+        top: 50% !important;
+      }
+      .slick-prev {
+        top: 50% !important;
+      }
+    }
+    .slick-arrow:before {
+      content: "" !important;
+      width: 80% !important;
+      height: 80% !important;
+      position: absolute;
+      top: 0px;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main_container {
+    :global {
+      .slick-next {
+        right: -24px;
+        top: 50% !important;
+      }
+      .slick-prev {
+        left: -24px;
+        top: 50% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_container {
+    left: 13px;
+    top: 210px;
+
+    :global {
+      .slick-arrow {
+        z-index: 2 !important;
+        width: 68px !important;
+        height: 68px !important;
+        overflow: hidden;
+      }
+      .slick-arrow:before {
+        transform: scale(2.1);
+      }
+      .slick-next {
+        right: -24px !important;
+      }
+      .slick-prev {
+        left: -24px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .main_container {
+
+    :global {
+      .slick-next {
+        right: -22px !important;
+      }
+      .slick-prev {
+        left: -22px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 474px) {
+  .main_container {
+
+    :global {
+      .slick-next {
+        right: -20px !important;
+      }
+      .slick-prev {
+        left: -20px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 424px) {
+  .main_container {
+    left: 8px;
+    top: 215px;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .main_container {
+    top: 248px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .main_container {
+    top: 275px;
+  }
+}

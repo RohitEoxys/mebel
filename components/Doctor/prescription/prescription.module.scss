@@ -1,0 +1,646 @@
+@import "../../../styles//variables.scss";
+.main {
+  padding: 50px 0px 50px 0px;
+  .background-design-1 {
+    position: absolute;
+    top: 103px;
+    right: 0px;
+    z-index: -1;
+    img {
+      overflow: hidden;
+    }
+  }
+  .main_container {
+    margin: auto;
+    .main_container_top {
+      .main_container_top-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .main_container_top-heading-left {
+          width: 50%;
+          color: $primaryColor;
+          font-weight: 500;
+          font-size: 32px;
+          font-family: $graphitmd;
+        }
+        .main_container_top-heading-right {
+          width: 50%;
+          text-align: right;
+          button {
+            background-color: #ed7b30;
+            height: 58px;
+            width: 257px;
+            color: #fff;
+            border-radius: 30px;
+            border: 1px solid transparent;
+            padding: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+      .main_container_top-content {
+        margin: 37px 0px 10px 0px;
+        color: $primaryColor;
+        font-weight: 500;
+
+        .medicine_details {
+          margin-top: 20px;
+
+          .medicine_name {
+            margin-left: 10px;
+            color: #4f537a;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            label {
+              margin-left: 10px;
+            }
+            input[type="checkbox"] {
+              -webkit-appearance: none;
+              appearance: none;
+              border: 1px solid #adb2d8;
+              border-radius: 3px;
+              width: 16px;
+              height: 16px;
+              background-color: white;
+            }
+
+            input[type="checkbox"]:checked {
+              background-image: url(../../../assets/images/checkbox.svg);
+              background-position: center;
+            }
+          }
+
+          .medicine_details-timing {
+            display: flex;
+            margin-top: 12px;
+            flex-wrap: wrap;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            justify-content: space-between;
+
+            &::-webkit-scrollbar {
+              height: 5px;
+              border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track {
+              background: #f1f1f1;
+            }
+            &::-webkit-scrollbar-thumb {
+              background: #df722a;
+              border-radius: 10px;
+              border: 1px solid transparent;
+            }
+
+            .medicine_details-timing-web-1 {
+              width: 17%;
+              @media screen and (max-width: 768px) {
+                width: 40%;
+              }
+
+              .drop-down {
+                width: 87%;
+                border-radius: 12px;
+                height: 57px;
+                border: 1px solid #c1c1ea;
+                color: #a7accf;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                position: relative;
+                .question {
+                  margin-left: 20px;
+                }
+              }
+              .dropdown-div {
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+                width: 220px;
+                color: #a7accf;
+                padding-left: 30px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                .item_day {
+                  padding: 5px 0px 0px 0px;
+                }
+              }
+            }
+            .medicine_details-timing-web-2 {
+              display: flex;
+              border: 1px solid #c1c1ea;
+              font-size: 15px;
+              align-items: center;
+              border-radius: 12px;
+              justify-content: space-between;
+              width: 40%;
+              height: 57px;
+              padding: 0px 20px 0px 20px;
+              line-height: 22.5px;
+
+              @media screen and (max-width: 768px) {
+                width: 60%;
+              }
+              span {
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                color: #4f537a;
+                gap: 5px;
+                input[type="checkbox"] {
+                  -webkit-appearance: none;
+                  appearance: none;
+                  border: 1px solid #adb2d8;
+                  border-radius: 3px;
+                  width: 16px;
+                  height: 16px;
+                  background-color: white;
+                }
+
+                input[type="checkbox"]:checked {
+                  background-image: url(../../../assets/images/checkbox.svg);
+                  background-position: center;
+                }
+              }
+            }
+            .medicine_days {
+              display: flex;
+              border-radius: 12px;
+              height: 57px;
+              align-items: center;
+              justify-content: space-between;
+              border: 1px solid #c1c1ea;
+              width: fit-content;
+              font-size: 15px;
+              min-width: 450px;
+              padding: 0px 20px 0px 20px;
+              color: #4f537a;
+
+              input[type="checkbox"] {
+                height: 17px;
+                width: 17px;
+                -webkit-appearance: none;
+                appearance: none;
+                border: 1px solid #adb2d8;
+                border-radius: 3px;
+                width: 16px;
+                height: 16px;
+                background-color: white;
+              }
+              input[type="checkbox"]:checked {
+                background-image: url(../../../assets/images/checkbox.svg);
+                background-position: center;
+              }
+            }
+          }
+        }
+        .search_section {
+          .search-2-div {
+            .search-2-div-1 {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              margin-top: 30px;
+              .add-btn-div {
+                .search-btn-2 {
+                  font-family: "Poppins";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 27px;
+                  color: #ffffff;
+                  width: 220px;
+                  height: 58px;
+                  background-color: #0f2f62;
+                  border: none;
+                  border-radius: 500px;
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  img {
+                    margin: 0px 0px 0px 10px;
+                    height: 35px;
+                    width: 35px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        hr {
+          color: #c1c1ea;
+        }
+      }
+    }
+
+    .main_container_bottom {
+      margin-top: 40px;
+      h1 {
+        color: $primaryColor;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      hr {
+        color: #c1c1ea;
+        margin-bottom: 21px;
+      }
+      .medical_studies {
+        color: #4f537a;
+        padding: 0px 0px 10px 0px;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .search_section2 {
+        display: flex;
+        gap: 15px;
+        .search_section2-search {
+          .input-tag {
+            border: 1px solid #c1c1ea;
+            height: 58px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0px 0px 0px 15px;
+            width: 850px;
+            input {
+              border: none;
+              width: 100%;
+              outline: none;
+              margin: 10px;
+            }
+            input::placeholder {
+              color: #a7accf;
+              font-size: 14px;
+            }
+          }
+        }
+        .search_section2-button {
+          .search-btn-2 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #ffffff;
+            padding: 0px 20px 0px 0px;
+            height: 58px;
+            background-color: #0f2f62;
+            border: none;
+            border-radius: 500px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+              margin: 0px 0px 0px 10px;
+              height: 35px;
+              width: 35px;
+            }
+          }
+        }
+      }
+      .bottom_checkbox {
+        margin: 50px 0px 50px 0px;
+        .bottom_checkbox-top {
+          display: flex;
+          align-items: center;
+          .checkbox_data {
+            color: #4f537a;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            gap: 10px;
+
+            input[type="checkbox"] {
+              -webkit-appearance: none;
+              appearance: none;
+              border: 1px solid #adb2d8;
+              border-radius: 3px;
+              width: 16px;
+              height: 16px;
+              background-color: white;
+            }
+            input[type="checkbox"]:checked {
+              background-image: url(../../../assets/images/checkbox.svg);
+              background-position: center;
+            }
+          }
+        }
+        .button-last {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .main {
+    .main_container {
+      .main_container_top {
+        .main_container_top-heading {
+          .main_container_top-heading-left {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    .main_container {
+      .main_container_top {
+        .main_container_top-heading {
+          .main_container_top-heading-left {
+            font-size: 22px;
+          }
+          .main_container_top-heading-right {
+            button {
+              padding: 9px;
+              font-size: 15px;
+            }
+          }
+        }
+        .main_container_top-content {
+          .medicine_details {
+            .medicine_details-timing {
+              .medicine_details-timing-web-2 {
+                font-size: 15px;
+                padding: 0px 10px 0px 10px;
+              }
+            }
+          }
+        }
+      }
+      .main_container_bottom {
+        .search_section2 {
+          .search_section2-search {
+            width: 70%;
+            .input-tag {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    .main_container {
+      .main_container_top {
+        .main_container_top-heading {
+          .main_container_top-heading-left {
+            font-size: 25px;
+          }
+          .main_container_top-heading-right {
+            button {
+              padding: 9px;
+              font-size: 14px;
+            }
+          }
+        }
+        .main_container_top-content {
+          .medicine_details {
+            .medicine_details-timing {
+              .medicine_details-timing-web-2 {
+                font-size: 15px;
+                padding: 0px 10px 0px 10px;
+              }
+            }
+          }
+        }
+      }
+      .main_container_bottom {
+        .search_section2 {
+          .search_section2-search {
+            .input-tag {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .main {
+    padding: 0px;
+    .background-design-1 {
+      display: none;
+    }
+    .main_container {
+      .main_container_top {
+        .main_container_top-heading {
+          .main_container_top-heading-left {
+            font-size: 25px;
+          }
+          .main_container_top-heading-right {
+            button {
+              padding: 8px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .main_container_bottom {
+        .search_section2 {
+          flex-direction: column;
+        }
+        .bottom_checkbox {
+          .bottom_checkbox-top {
+            gap: 20px;
+            padding: 20px 0px 20px 0px;
+            .checkbox_data {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .main {
+    padding: 0px 10px 0px 10px;
+
+    .main_container {
+      .main_container_top {
+        .main_container_top-heading {
+          .main_container_top-heading-left {
+            font-size: 25px;
+          }
+          .main_container_top-heading-right {
+            button {
+              padding: 8px;
+              font-size: 13px;
+            }
+          }
+        }
+        .main_container_top-content {
+          .medicine_details {
+            .medicine_details-timing {
+              display: flex;
+              flex-direction: column;
+              .medicine_details-timing-web-1 {
+                width: 100%;
+                .drop-down {
+                  justify-content: space-between;
+                  span {
+                    img {
+                      margin-left: -30px;
+                    }
+                  }
+                }
+              }
+              .medicine_details-timing-web-2 {
+                width: 450px;
+              }
+            }
+          }
+        }
+      }
+      .main_container_bottom {
+        .search_section2 {
+          .search_section2-search {
+            .input-tag {
+              width: 476px;
+              align-items: center;
+            }
+          }
+        }
+        .bottom_checkbox {
+          margin: 10px 0px 10px 0px;
+          .bottom_checkbox-top {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .main {
+    .main_container {
+      .main_container_top {
+        .main_container_top-heading {
+          .main_container_top-heading-left {
+            font-size: 23px;
+            width: 100%;
+          }
+          .main_container_top-heading-right {
+            display: none;
+            button {
+              padding: 7px;
+              font-size: 12px;
+            }
+          }
+        }
+        .main_container_top-content {
+          margin: 10px 0px 10px 0px;
+        }
+      }
+      .main_container_bottom {
+        .search_section2 {
+          .search_section2-search {
+            width: 100%;
+            .input-tag {
+              width: 100%;
+            }
+          }
+          .search_section2-button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .search-btn-2 {
+              font-size: 18px;
+              width: 70%;
+            }
+          }
+        }
+        .bottom_checkbox {
+          .bottom_checkbox-top {
+            .checkbox_data {
+              width: 100%;
+            }
+          }
+          .button-last {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0px 10px 0px;
+            button {
+              color: #fff;
+              background-color: #df722a;
+              border: 1px solid transparent;
+              padding: 10px 20px 10px 20px;
+              width: 100%;
+              border-radius: 30px;
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    .main_container {
+      .main_container_top {
+        .main_container_top-heading {
+          .main_container_top-heading-right {
+            button {
+              padding: 6px;
+              font-size: 11px;
+            }
+          }
+        }
+        .main_container_top-content {
+          .search_section {
+            .search-2-div {
+              .search-2-div-1 {
+                .search-2-div-2 {
+                  .input-tag {
+                    width: 220px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .main_container_bottom {
+        .search_section2 {
+          .search_section2-search {
+            .input-tag {
+              width: 100%;
+            }
+          }
+          .search_section2-button {
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.medicalStudiesPopupInput {
+  border-radius: 12px !important;
+}
+
+.add_btn {
+  padding: 9px 50px !important;
+}

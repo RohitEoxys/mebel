@@ -1,0 +1,93 @@
+.uploads_reports {
+  padding: 15px;
+  .reports_head {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #4f537a;
+  }
+  .report_description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #4f537a;
+    padding-top: 10px;
+  }
+  .textarea_input {
+    padding-top: 5px;
+    textarea {
+      border: 1px solid #c1c1ea;
+      border-radius: 6px;
+      resize: none;
+      width: 100%;
+      outline-color: #ed7b30;
+      padding: 4px 8px;
+      color: #4f537a;
+      font-size: 14px;
+    }
+  }
+  .textarea_with_upload {
+    padding-top: 15px;
+    text-align: end;
+    position: relative;
+    // textarea {
+    border: 1px solid #c1c1ea;
+    border-radius: 6px;
+    resize: none;
+    width: 100%;
+    outline-color: #ed7b30;
+    padding: 5px 8px;
+    color: #4f537a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    // }
+    .upload_report_btn {
+      top: 20px;
+      right: 5px;
+      border: none;
+
+      .custom-file-upload {
+        background: #0f2f62;
+        border-radius: 6px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #ffffff;
+        padding: 12px 8px;
+        display: inline-block;
+        cursor: pointer;
+        min-width: 115px;
+      }
+      input[type="file"] {
+        display: none;
+      }
+    }
+  }
+  .save_btn {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    button {
+      background: #ed7b30;
+      border: 1px solid #ed7b30;
+      border-radius: 500px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #ffffff;
+      padding: 10px 40px;
+    }
+  }
+}
+
+.reportError {
+  color: red;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}

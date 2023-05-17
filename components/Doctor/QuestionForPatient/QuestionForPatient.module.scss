@@ -1,0 +1,242 @@
+.question_main_div {
+  position: relative;
+  .cornor_img_div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .question_patient_main {
+    padding: 20px;
+    @media screen and (max-width: 550px) {
+      padding: 8px;
+    }
+    .question_head {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 31px;
+      color: #0f2f62;
+      margin-bottom: 30px;
+      padding-top: 17px;
+    }
+    .questions_div {
+      display: flex;
+      justify-content: space-between;
+      background: #fcfbfa;
+      border-radius: 6px;
+      padding: 25px 20px;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 550px) {
+        padding: 20px 12px;
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+      }
+      .question_no {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #193b68;
+      }
+      .real_question {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #193b68;
+      }
+    }
+    .add_question_btn {
+      text-align: center;
+      margin-top: 55px;
+      margin-bottom: 45px;
+      button {
+        background: #0f2f62;
+        border-radius: 500px;
+        border: none;
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+
+        padding: 10px 45px;
+
+        &:disabled,
+        &:hover:disabled,
+        &:active:disabled {
+          background: #ccc;
+          color: #979797;
+          border-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+.add_btn {
+  padding: 10px 50px !important;
+}
+
+.input_speciality {
+  // margin-left: 60px;
+  // width: 90.8%;
+  margin-bottom: 15px !important;
+  border: 1px solid #ed7b30;
+  width: 218px;
+
+  @media (max-width: 1400px) {
+    width: 100% !important;
+  }
+
+  @media (max-width: 1200px) {
+    width: 100% !important;
+  }
+
+  @media (max-width: 991px) {
+    width: 100% !important;
+  }
+  // @media (max-width: 768px) {
+  //   margin-left: 60 !important;
+  //   width: 88.5% !important;
+  // }
+  @media (max-width: 768px) {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+.input_box {
+  padding: 0px;
+}
+.question_dropdown {
+  margin-left: 0px !important;
+  display: flex;
+  flex-direction: column;
+  width: 20% !important;
+  @media (max-width: 1400px) {
+    width: 30% !important;
+  }
+  @media (max-width: 1200px) {
+    width: 30% !important;
+  }
+  @media (max-width: 991px) {
+    width: 100% !important;
+  }
+  // @media (max-width: 768px) {
+  //   margin-left: 60 !important;
+  //   width: 88.5% !important;
+  // }
+  @media (max-width: 768px) {
+    margin-left: 0 !important;
+    width: 100% !important;
+    // left: 0;
+  }
+  @media (max-width: 400px) {
+    margin-left: 0 !important;
+    width: 100% !important;
+    // left: 0;
+  }
+}
+.question_dropdown_div {
+  display: flex !important;
+  width: 100%;
+  gap: 0 100px;
+  margin-top: 20px;
+
+  .symptoms_checkbox {
+    :global {
+      .ant-checkbox-inner {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+}
+
+.btn_div {
+  width: 100%;
+  justify-content: unset;
+  flex-direction: row-reverse !important;
+}
+
+.back_btn {
+  padding: 15px;
+  width: 19.8%;
+  @media (max-width: 1400px) {
+    width: 30% !important;
+  }
+  @media (max-width: 1200px) {
+    width: 30% !important;
+  }
+  @media (max-width: 991px) {
+    width: 100% !important;
+  }
+  // @media (max-width: 768px) {
+  //   margin-left: 60 !important;
+  //   width: 88.5% !important;
+  // }
+  @media (max-width: 768px) {
+    margin-left: 0 !important;
+    width: 100% !important;
+    // left: 0;
+  }
+  @media (max-width: 400px) {
+    margin-left: 0 !important;
+    width: 100% !important;
+    // left: 0;
+  }
+}
+
+.speciality_placeholder {
+  color: #ed7b30;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.checkboxtypo {
+  color: #4f537a;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: #ed7b30;
+    cursor: pointer;
+    transition: all ease 0.25s;
+    color: #ffffff;
+  }
+}
+
+.startDropClass {
+  width: fit-content;
+  padding: 0px;
+}
+
+.main_text_area {
+  textarea {
+    outline: none !important;
+  }
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
+
+.no_question_found {
+  color: #0f2f62;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  padding: 110px 0;
+}
+.fix_footer {
+  padding: 20px 20px 150px 20px !important;
+}
+.fix_footer1 {
+  padding: 20px 20px 45px 20px !important;
+}

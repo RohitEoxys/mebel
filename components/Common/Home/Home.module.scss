@@ -1,0 +1,700 @@
+.first_body_div {
+  position: relative;
+  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+  .pink_body_div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #faf4f4;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .first_body_content {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    .doctor_contant {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 80px;
+      text-transform: capitalize;
+      color: #292b40;
+      padding-right: 30px;
+      .welcome_mebel {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ed7b30;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        .minus_div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .minus {
+            width: 10px;
+            height: 4px;
+            background: #ed7b30;
+          }
+          .minus_long {
+            width: 100px;
+            height: 4px;
+            background: #ed7b30;
+          }
+        }
+      }
+      .feel_better {
+        font-size: 61px;
+        .health_care {
+          font-weight: 700;
+          font-size: 61px;
+          color: #ed7b30;
+        }
+      }
+      .better_para_one {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #6d655f;
+      }
+    }
+  }
+}
+
+.div_with_heart {
+  position: relative;
+  background-image: url("../../../assets/images/shadow2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  @media screen and (max-width: 991px) {
+    background-image: unset;
+  }
+  .screenshot_div {
+    display: flex;
+    align-items: center;
+    /* gap: 35px; */
+    padding-top: 50px;
+    justify-content: space-between;
+
+    .screenshot_div_right {
+      width: auto;
+      position: relative;
+      // border: 2px solid red;
+      .doct_img_two {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+        // position: absolute;
+      }
+      .doct_img_three {
+        position: absolute;
+        top: 50px;
+        right: -60px;
+        box-shadow: 4px 4px 60px rgba(237, 123, 48, 0.15);
+        border-radius: 10px;
+        width: 47%;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .doct_img_four {
+        position: absolute;
+        bottom: 23px;
+        left: -40px;
+        box-shadow: -4px 4px 60px rgb(26 42 54 / 15%);
+        border-radius: 10px;
+      }
+    }
+
+    .swip_with_content {
+      width: 48%;
+      position: relative;
+      &-heading {
+        h6 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 52px;
+          text-transform: capitalize;
+          color: #ed7b30;
+        }
+      }
+      // .shadow_div {
+      //   position: absolute;
+      // }
+      // &-buttons {
+      //   display: flex;
+      //   gap: 15px;
+      //   margin-top: 10px;
+      // }
+    }
+
+    .follow_up_head {
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 60px;
+      text-transform: capitalize;
+      color: #292b40;
+      margin-bottom: 25px;
+    }
+    .follow_content {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #5b4f46;
+      padding-top: 12px;
+      padding-bottom: 5px;
+      .follow_para {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #5b4f46;
+      }
+    }
+    .checkbox_content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 27px;
+      padding-top: 10px;
+      .checkbox_para {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #898989;
+      }
+    }
+    .swip_with_btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .makeAppointment_btn {
+        background: #ed7b30;
+        border-radius: 800px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #ffffff;
+        border: none;
+        padding: 14px 20px;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #ed7b30;
+          color: #ed7b30;
+        }
+      }
+      .doctor_btn {
+        background-color: transparent;
+        border: 1px solid #ed7b30;
+        border-radius: 800px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #ed7b30;
+        padding: 14px 46px;
+        &:hover {
+          background: #ed7b30;
+          color: #ffffff;
+        }
+      }
+    }
+    .three_star_img {
+      position: absolute;
+      top: 40px;
+      right: 50px;
+    }
+    .hand_with_heart {
+      position: absolute;
+      bottom: 280px;
+      right: 0px;
+      z-index: -1;
+    }
+    .single_star {
+      position: absolute;
+      bottom: 350px;
+      left: 35px;
+    }
+  }
+  .home_info_boxes {
+    padding-bottom: 60px;
+    padding-top: 25px;
+  }
+}
+.back_zigzag {
+  background-image: url("../../../assets/images/zigzagline.svg");
+  background-repeat: no-repeat;
+  background-position: 96% 94%;
+  // height: 75vh;
+  padding-bottom: 180px;
+  @media screen and (max-width: 991px) {
+    background-image: unset;
+    padding-bottom: 0;
+  }
+}
+.doctor_consult {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 50px 4px;
+  .appointment_img {
+    box-shadow: rgb(0 0 0 / 25%) 0px 5px 15px;
+    border-radius: 10px;
+  }
+  .appointment_content {
+    padding: 0px 62px;
+    .make_appointment {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: capitalize;
+      color: #ed7b30;
+    }
+    .get_appointment {
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 55px;
+      text-transform: capitalize;
+      color: #292b40;
+      padding-top: 10px;
+      .consult {
+        color: #ed7b30;
+      }
+    }
+    .appointment_para {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 27px;
+      text-transform: capitalize;
+      color: #655951;
+      padding-top: 15px;
+      .appointment_head {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #655951;
+      }
+    }
+    .appointment_sec_para {
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #655951;
+      padding-top: 10px;
+      .appointment_head {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #655951;
+      }
+    }
+  }
+}
+/* responsive design of home page start */
+
+@media screen and (max-width: 1399px) {
+  .first_body_div {
+    .first_body_content {
+      .doctor_contant {
+        .feel_better {
+          font-size: 55px;
+          .health_care {
+            font-size: 55px;
+          }
+        }
+      }
+    }
+  }
+  .div_with_heart {
+    .screenshot_div {
+      .swip_with_content {
+        padding: 5px;
+        width: 44%;
+        &-heading {
+          h6 {
+            line-height: 16px;
+          }
+        }
+        .checkbox_content {
+          padding-bottom: 15px;
+        }
+        .follow_up_head {
+          font-size: 34px;
+          padding-top: 5px;
+        }
+        .swip_with_btn {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .client_feedback {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .first_body_div {
+    .first_body_content {
+      .doctor_contant {
+        padding-right: 25px;
+        .feel_better {
+          font-size: 38px;
+          line-height: 60px;
+          .health_care {
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
+  .div_with_heart {
+    .screenshot_div {
+      gap: 35px;
+      .screenshot_div_right {
+        .doct_img_three {
+          top: 21px;
+          right: -15px;
+          // height: auto;
+          img {
+            // width: 182px;
+            // height: 165px;
+          }
+        }
+      }
+      .swip_with_content {
+        padding: 5px;
+        width: 70%;
+        &-heading {
+          h6 {
+            line-height: 16px;
+          }
+        }
+        .checkbox_content {
+          padding-bottom: 5px;
+        }
+        .follow_up_head {
+          font-size: 26px;
+          margin-bottom: 10px;
+        }
+        .swip_with_btn {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .first_body_div {
+    .first_body_content {
+      // flex-wrap: wrap;
+      justify-content: center;
+      .doctor_contant {
+        padding-right: 0px;
+        .welcome_mebel {
+          gap: 12px;
+          padding-top: 20px;
+          // padding-bottom: 10px;
+        }
+        .feel_better {
+          font-size: 32px;
+          line-height: 46px;
+          .health_care {
+            font-size: 32px;
+          }
+        }
+        .better_para_one {
+          line-height: 24px;
+        }
+      }
+      .image_circle {
+        .doctor_image {
+          width: 375px;
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .div_with_heart {
+    .screenshot_div {
+      gap: 35px;
+      .screenshot_div_right {
+        .doct_img_four {
+          left: -25px;
+          img {
+            width: 150px;
+            height: 55px;
+          }
+        }
+        .doct_img_three {
+          top: 1px;
+          right: -29px;
+          img {
+            width: 145px;
+            height: 124px;
+          }
+        }
+      }
+      .swip_with_content {
+        padding: 5px;
+        width: 100%;
+        &-heading {
+          h6 {
+            line-height: 16px;
+          }
+        }
+        .checkbox_content {
+          padding-bottom: 5px;
+          padding-top: 5px;
+          .checkbox_para {
+            font-size: 16px;
+          }
+        }
+        .follow_up_head {
+          font-size: 20px;
+          margin-bottom: 5px;
+          line-height: 35px;
+        }
+        .swip_with_btn {
+          margin-top: 12px;
+          gap: 10px;
+          .makeAppointment_btn {
+            padding: 10px 12px;
+            font-size: 15px;
+          }
+          .doctor_btn {
+            padding: 10px 16px;
+            font-size: 15px;
+          }
+        }
+      }
+      .hand_with_heart {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .first_body_div {
+    .first_body_content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .div_with_heart {
+    .screenshot_div {
+      gap: 0px;
+      flex-wrap: wrap-reverse;
+      .screenshot_div_right {
+        .doct_img_four {
+          left: -22px;
+          width: 40%;
+          img {
+            width: 100%;
+            height: unset;
+          }
+        }
+        .doct_img_three {
+          top: 29px;
+          right: -40px;
+          img {
+            width: unset;
+            height: unset;
+          }
+        }
+      }
+      .swip_with_content {
+        padding-bottom: 20px;
+        width: 100%;
+        &-heading {
+          h6 {
+            line-height: 16px;
+          }
+        }
+        .checkbox_content {
+          padding-bottom: 5px;
+          padding-top: 5px;
+          .checkbox_para {
+            font-size: 16px;
+          }
+        }
+        .follow_up_head {
+          font-size: 20px;
+          margin-bottom: 5px;
+          line-height: 35px;
+        }
+        .swip_with_btn {
+          margin-top: 12px;
+          .makeAppointment_btn {
+            // padding: 10px 30px;
+          }
+          .doctor_btn {
+            padding: 10px 30px;
+          }
+        }
+      }
+      .hand_with_heart {
+        display: none;
+      }
+    }
+    .home_info_boxes {
+      padding-top: 40px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .div_with_heart {
+    .screenshot_div {
+      .screenshot_div_right {
+        .doct_img_three {
+          top: 35px;
+          right: 8px;
+          width: 40%;
+          img {
+            width: 100%;
+            height: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .first_body_div {
+    .first_body_content {
+      padding: 15px;
+    }
+  }
+  .div_with_heart {
+    padding: 0 15px;
+  }
+  .slick-prev {
+    left: -10px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .first_body_div {
+    .first_body_content {
+      .doctor_contant {
+        .welcome_mebel {
+          font-size: 12px;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  .div_with_heart {
+    .screenshot_div {
+      .swip_with_content {
+        .swip_with_btn {
+          flex-direction: column;
+        }
+        .checkbox_content {
+          .checkbox_para {
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 374px) {
+  .first_body_div {
+    .first_body_content {
+      .image_circle {
+        .doctor_image {
+          width: 100%;
+        }
+      }
+      .doctor_contant {
+        .welcome_mebel {
+          gap: 12px;
+          .minus_div {
+            .minus_long {
+              width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 315px) {
+  .first_body_div {
+    .first_body_content {
+      .doctor_contant {
+        .welcome_mebel {
+          .minus_div {
+            .minus_long {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.swip_with_content {
+  // width: 51%;
+
+  // &-buttons {
+  //   width: 70%;
+  //   display: flex;
+  //   margin-top: 37px;
+  // }
+}
+/* responsive design of home page end */
+
+.makeAppointment_btn {
+  display: block !important;
+  width: unset !important;
+}
+.doctor_btn {
+  // justify-content: left !important;
+  display: block !important;
+  width: unset !important;
+
+  &_class {
+    background-color: transparent !important;
+    border: 1px solid #ed7b30 !important;
+    color: #ed7b30 !important;
+    padding: 9px 50px !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .makeAppointment_btn {
+    width: 100% !important;
+  }
+  .doctor_btn {
+    width: 100% !important;
+  }
+}

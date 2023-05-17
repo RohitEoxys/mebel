@@ -1,0 +1,425 @@
+.doctor_form {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  .input_form_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    .Input_div {
+      width: 32%;
+      input {
+        border: 1px solid #ffece0;
+        padding: 13px 20px;
+      }
+      .labelHead {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.3px;
+        color: #2a2e51;
+      }
+    }
+    .first_dropdown_div {
+      width: 32%;
+      .doctor_spac {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.3px;
+        color: #2a2e51;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .day_time {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    align-items: flex-end;
+    .day_div {
+      width: 23%;
+      position: relative;
+      .doctor_spac {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.3px;
+        color: #2a2e51;
+        margin-bottom: 4px;
+      }
+      input {
+        border: 1px solid #ffece0;
+        padding: 13px 20px;
+      }
+      .time_lebel {
+      }
+      .start_time_div {
+        border: 1px solid #ffece0;
+        padding: 13px 10px;
+        border-radius: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        .hours {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: -0.3px;
+          color: #2a2e51;
+          cursor: pointer;
+        }
+        .divider {
+          border: 1px solid #c9c9c9;
+        }
+        .minutes {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: -0.3px;
+          color: #2a2e51;
+          cursor: pointer;
+        }
+      }
+      .hours_drop {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 125px;
+        height: 241px;
+        left: 0px;
+        top: 80px;
+        background: #ffffff;
+        border-radius: 10px;
+        // padding: 10px;
+        padding-top: 10px;
+        text-align: center;
+        gap: 5px;
+        z-index: 1;
+        overflow: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // border: 1px solid #ffece0;
+        .drop_hour {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: capitalize;
+          color: #0f2f62;
+          padding: 2px 5px;
+          &:hover {
+            background-color: #ffece0;
+            cursor: pointer;
+          }
+        }
+      }
+      .minutes_drop {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 125px;
+        height: 241px;
+        right: 20px;
+        top: 82px;
+        background: #ffffff;
+        border-radius: 10px;
+        padding-top: 10px;
+        text-align: center;
+        gap: 5px;
+        z-index: 1;
+        overflow: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .drop_time {
+          font-weight: 400;
+          font-size: 14px;
+          padding: 2px 5px;
+          line-height: 21px;
+          text-transform: capitalize;
+          color: #0f2f62;
+          &:hover {
+            background-color: #ffece0;
+            cursor: pointer;
+          }
+        }
+      }
+      .btn_div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .doctorSeacrhBtn {
+          padding: 11px 20px;
+        }
+        Button {
+          width: 100%;
+        }
+        .circle_cross {
+          box-sizing: border-box;
+          width: 24%;
+          height: 50px;
+          background: #ffffff;
+          border: 1px solid #ffece0;
+          border-radius: 500px;
+          position: relative;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.2);
+            transition: all ease 0.5s;
+          }
+
+          img {
+            position: absolute;
+            bottom: 15px;
+            left: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hours_drop::-webkit-scrollbar {
+  width: 6px;
+}
+
+.hours_drop::-webkit-scrollbar-track {
+  background-color: #c5c5c5;
+  border-radius: 10px;
+}
+
+.hours_drop::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ed7b30;
+}
+.minutes_drop::-webkit-scrollbar {
+  width: 6px;
+}
+
+.minutes_drop::-webkit-scrollbar-track {
+  background-color: #c5c5c5;
+  border-radius: 10px;
+}
+
+.minutes_drop::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ed7b30;
+}
+
+.doctor_list_box_lebel {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.3px;
+  color: #2a2e51;
+  margin-bottom: 6px;
+}
+
+//  responsive view start
+
+@media screen and (max-width: 1399px) {
+  .doctor_form {
+    .day_time {
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 34%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .doctor_form {
+    .day_time {
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .doctor_form {
+    .input_form_list {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 15px;
+      .Input_div {
+        width: 48%;
+      }
+      .first_dropdown_div {
+        width: 48%;
+      }
+    }
+    .day_time {
+      display: flex;
+      justify-content: space-around;
+      padding: 16px 20px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+      .day_div {
+        width: 32%;
+        .btn_div {
+          padding-top: 15px;
+          .circle_cross {
+            width: 39%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .doctor_form {
+    .input_form_list {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 15px;
+      .Input_div {
+        width: 100%;
+      }
+      .first_dropdown_div {
+        width: 100%;
+      }
+    }
+    .day_time {
+      display: flex;
+      justify-content: space-around;
+      padding: 16px 20px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+      .day_div {
+        width: 100%;
+        .btn_div {
+          .circle_cross {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 530px) {
+  .doctor_form {
+    .day_time {
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 16%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 450px) {
+  .doctor_form {
+    .day_time {
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 18%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 449px) and (min-width: 400px) {
+  .doctor_form {
+    .day_time {
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 22%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 399px) and (min-width: 350px) {
+  .doctor_form {
+    .input_form_list {
+      padding: 10px 3px;
+    }
+    .day_time {
+      padding: 16px 10px;
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 29%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .doctor_form {
+    .day_time {
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 24%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 349px) and (min-width: 300px) {
+  .doctor_form {
+    .input_form_list {
+      padding: 10px 3px;
+    }
+    .day_time {
+      padding: 16px 10px;
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 39%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .doctor_form {
+    .day_time {
+      .day_div {
+        .btn_div {
+          .circle_cross {
+            width: 32%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 299px) and (min-width: 280px) {
+  .doctor_form {
+    .input_form_list {
+      padding: 10px 2px;
+    }
+    .day_time {
+      padding: 16px 10px;
+      .day_div {
+        .btn_div {
+          gap: 10px;
+          .circle_cross {
+            width: 39%;
+          }
+        }
+      }
+    }
+  }
+}

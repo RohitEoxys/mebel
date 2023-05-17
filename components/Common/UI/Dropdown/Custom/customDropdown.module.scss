@@ -1,0 +1,91 @@
+@import "../../../../../styles/variables.scss";
+.main_container {
+  width: 100%;
+  border-radius: 500px;
+  border: 1px solid #c1c1ea;
+  position: relative;
+}
+.box {
+  cursor: pointer;
+  padding: 2px 0;
+
+  &-placeHolder {
+    color: #a7accf;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 23px;
+    pointer-events: none;
+    line-height: 50px;
+    user-select: none;
+  }
+
+  i {
+    position: absolute;
+    right: 20px;
+    top: 33%;
+  }
+
+  &_dropdown {
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 10%);
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    z-index: 100;
+    & > label {
+      margin-left: 8px;
+    }
+
+    h6 {
+      font-size: 15px;
+      font-weight: 500;
+      color: #4f537a;
+    }
+
+    &-border {
+      border: 1px solid #c1c1ea;
+      margin: 0 7px 5px 7px;
+    }
+  }
+}
+.ant-checkbox-wrapper {
+  span {
+    color: red;
+  }
+}
+.errorText {
+  color: rgb(235, 48, 48);
+  margin-left: 68px;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 15px;
+}
+
+.itemBox {
+  height: 40px;
+  display: inline-block;
+  margin: 0px;
+  margin-left: 12px;
+  margin-top: 7px;
+
+  span {
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0px 4px 30px 0px #d7b29b1f;
+    background-color: #4f537a;
+  }
+}

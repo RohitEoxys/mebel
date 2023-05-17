@@ -1,0 +1,61 @@
+.sucess_popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000000a1;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sucess_popup_div {
+    max-width: 501px;
+    width: 95%;
+    padding: 10px 30px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+    min-height: 200px;
+    max-height: 95vh;
+    overflow-y: scroll;
+    border-radius: 15px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .sucess_circle {
+      text-align: center;
+      padding: 25px 0 25px 0;
+    }
+    .sucess_message_head {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 43px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #193b68;
+    }
+    .sucess_message {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 43px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #193b68;
+    }
+    .success_btn {
+      text-align: center;
+      width: 100%;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      button {
+        border: none;
+        padding: 10px 50px;
+        background: #ed7b30;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500px;
+        border-radius: 200px;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "../../../../../styles/variables.scss";
+
+.main_container {
+  position: relative;
+
+  .background-design-1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .inputFields {
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 25px;
+
+    // @media screen and (max-width: 1199px) {
+    //   width: 60%;
+    // }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+      color: #0f2f62;
+      font-family: $graphitmd;
+      margin-bottom: 36px;
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+    .input_1 {
+      margin-bottom: 10px;
+
+      input {
+        @media (max-width: 768px) {
+          padding: 12px 12px;
+          font-size: 12px;
+        }
+      }
+
+      label {
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .question_save_btn {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        margin-bottom: unset;
+      }
+
+      .next {
+        background: #ed7b30;
+        border-radius: 200px;
+        border: none;
+        font-weight: 500;
+        font-size: 17px;
+        color: #ffffff;
+        padding: 12px 110px;
+
+        @media (max-width: 1399px) {
+          padding: 12px 90px;
+        }
+        @media (max-width: 1199px) {
+          padding: 12px 80px;
+        }
+        @media (max-width: 992px) {
+          padding: 12px 50px;
+          font-size: 14px;
+        }
+        @media (max-width: 768px) {
+          padding: 12px 80px;
+          font-size: 14px;
+        }
+        @media (max-width: 480px) {
+          padding: 12px 40px;
+        }
+
+        &:disabled,
+        &:hover:disabled,
+        &:active:disabled {
+          background: #ccc;
+          color: #979797;
+          border-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+
+      .back {
+        background: transparent;
+        border-radius: 200px;
+        border: 1px solid #ed7b30;
+        font-weight: 500;
+        font-size: 17px;
+        color: #ed7b30;
+        padding: 12px 110px;
+
+        @media (max-width: 1399px) {
+          padding: 12px 90px;
+        }
+        @media (max-width: 1199px) {
+          padding: 12px 80px;
+        }
+        @media (max-width: 992px) {
+          padding: 12px 50px;
+          font-size: 14px;
+        }
+        @media (max-width: 768px) {
+          padding: 12px 80px;
+          font-size: 14px;
+        }
+        @media (max-width: 480px) {
+          padding: 12px 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    display: none;
+  }
+  .inputFields {
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .addNewQuestion_btn {
+    text-align: center;
+
+    &_main {
+      width: 100%;
+      font-size: 15px !important;
+    }
+  }
+
+  .next_btn {
+    text-align: center;
+
+    &_main {
+      width: 100%;
+
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+  }
+}

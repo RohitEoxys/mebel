@@ -1,0 +1,251 @@
+.about_us {
+  .about_back_img {
+    background-image: url("../../../assets/images/about_back2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .about_us_div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 300px;
+      .about_us_heading {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        text-transform: capitalize;
+        color: #292b40;
+      }
+      .about_us_subhead {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: 0.06em;
+        text-transform: capitalize;
+        color: #705543;
+      }
+    }
+  }
+  .image_collage_div {
+    display: flex;
+    padding: 55px 0px;
+    gap: 50px;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 34px 0px;
+    }
+    .iamge_collage_section {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+      .first_image {
+        width: 60%;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
+        img {
+          border-radius: 25px;
+          width: 100%;
+        }
+      }
+      .images_section_two {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 40%;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
+        .second_images {
+          flex-grow: 1;
+          width: 100%;
+          height: 40%;
+          @media screen and (max-width: 500px) {
+            height: auto;
+          }
+          img {
+            border-radius: 25px;
+            width: 100%;
+          }
+        }
+        .third_images {
+          flex-grow: 2;
+          width: 100%;
+          height: 60%;
+          img {
+            border-radius: 25px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .about_mabel_section {
+      width: 100%;
+      .about_mabel_head {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ed7b30;
+        padding-top: 8px;
+      }
+      .mabel_pateform {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 57px;
+        text-transform: capitalize;
+        color: #292b40;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        .doctors_mabel {
+          color: #ed7b30;
+        }
+      }
+      .check_with_label {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 12px 3px;
+        .listing_chexkbox {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: #898989;
+        }
+      }
+    }
+  }
+  .our_vision_img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 25px;
+    }
+  }
+  .our_story_head {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 52px;
+    text-transform: capitalize;
+    color: #292b40;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  .our_story_content1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #5a4b41;
+    padding-bottom: 20px;
+  }
+  .our_story_content2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #898989;
+    padding-bottom: 20px;
+  }
+  .strong_mabel_div {
+    display: flex;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 40px 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    gap: 15px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    .left_content {
+      width: 100%;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 57px;
+      text-transform: capitalize;
+      color: #181f23;
+      .mabel {
+        color: #ed7b30;
+      }
+    }
+    .right_content {
+      width: 100%;
+      .first_div_content {
+        width: 100%;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 24px;
+        color: #5a4b41;
+        padding-bottom: 20px;
+      }
+      .second_div_content {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #898989;
+        padding-bottom: 15px;
+      }
+      .third_div_content {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #898989;
+      }
+    }
+  }
+  .about_mabel_history_div {
+    width: 100%;
+    padding: 20px 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 35px;
+    }
+    .about_mabel_history {
+      width: 30%;
+      @media screen and (max-width: 767px) {
+        width: 46%;
+      }
+      @media screen and (max-width: 470px) {
+        width: 100%;
+      }
+      .happy_count {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 55px;
+        color: #ed7b30;
+      }
+      .happy_patient {
+        font-family: "Arial";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 55px;
+        color: #181f23;
+        @media screen and (max-width: 991px) {
+          font-size: 20px;
+          line-height: 30px;
+          padding-top: 10px;
+        }
+      }
+      .happy_content {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #515151;
+      }
+    }
+  }
+}

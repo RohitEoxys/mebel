@@ -1,0 +1,140 @@
+.card-div {
+  text-align: -webkit-center;
+}
+.card-coponent {
+  width: 100%;
+  height: auto;
+}
+
+.cards {
+  text-align: left;
+  margin-top: 22px;
+  margin-bottom: 34px;
+  width: 100%;
+  background: #ffffff;
+}
+.cards-line-1 {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 142%;
+  color: #0f2f62;
+  margin-bottom: 1px;
+}
+.cards-line-2 {
+  width: 245px;
+  height: 22px;
+  margin-bottom: 13px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 22px;
+
+  text-transform: capitalize;
+}
+.cards-line-3 {
+  width: 117px;
+  height: 26px;
+  margin-bottom: 10px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142%;
+
+  color: #292b40;
+}
+.cards-line-4 {
+  width: 115px;
+  height: 23px;
+  margin-bottom: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #4f537a;
+}
+.cards-line-5 {
+  width: auto;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 21px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+}
+.only-btn {
+  background: #0f2f62;
+  border-radius: 200px;
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #0f2f62 !important;
+}
+
+.card-div-1 {
+  width: 25%;
+  text-align: right;
+  margin-right: 39px;
+}
+.card-div-2 {
+  width: 75%;
+  text-align: left;
+}
+
+.card-t-1 {
+  width: 178.67px;
+  height: 31.03px;
+  margin-top: 12px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 0;
+
+  color: #17294d;
+}
+.card-t-2 {
+  width: 131.59px;
+  height: 25.68px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: #8e9bb3;
+}
+
+.card {
+  display: flex;
+  border-radius: 14px;
+
+  padding: 12px;
+}
+.column {
+  width: auto;
+  height: auto;
+  //   margin-right: 22px;
+  border-radius: 50px;
+  background: #ffffff;
+
+  //   margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+}
+.card-img {
+}
+.inner-card {
+  padding: 20px;
+  box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+}

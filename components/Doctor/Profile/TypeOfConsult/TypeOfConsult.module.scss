@@ -1,0 +1,78 @@
+.popup_body {
+  padding: 10px 0;
+  .name_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px 10px 20px;
+    .consultaion_name {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #0f2f62;
+    }
+    .consultation_price {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #0f2f62;
+    }
+  }
+  .consultation_type {
+    .consultations {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+      padding: 7px 20px 7px 10px;
+      border-bottom: 1px solid #d9d9d9;
+      width: 100%;
+      .check_consult {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 85%;
+        .consult {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          color: #565973;
+        }
+      }
+      .price_input {
+        width: 15%;
+        input {
+          width: 100%;
+          background: #ffffff;
+          border: 1px solid #d2d2d2;
+          border-radius: 4px;
+          outline-color: #ed7b30;
+          padding: 3px 10px;
+          font-size: 14px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+      }
+    }
+    .btn_div {
+      text-align: end;
+      padding: 18px 20px 8px 0px;
+      button {
+        border: none;
+        background: #ed7b30;
+        border: 1px solid #ed7b30;
+        border-radius: 500px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 15px;
+        padding: 8px 20px;
+        color: #ffffff;
+      }
+    }
+  }
+}

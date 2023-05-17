@@ -1,0 +1,331 @@
+.main {
+  .main-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .background-design-1 {
+      position: absolute;
+      top: 83px;
+      right: 0px;
+      z-index: -1;
+      img {
+        overflow: hidden;
+      }
+    }
+    .patient_login {
+      display: flex;
+      gap: 50px;
+      .login_left {
+        width: 100%;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .login_right {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-top: 55px;
+        .login_head {
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 43px;
+          text-align: center;
+          text-transform: capitalize;
+          color: #193b68;
+
+          @media (max-width: 500px) {
+            font-size: 30px;
+          }
+        }
+        .login_content {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #7e83a7;
+          margin-top: 20px;
+
+          @media (max-width: 500px) {
+            font-size: 12px;
+            margin-top: 5px !important;
+            margin-bottom: 10px !important;
+          }
+        }
+        .number_form_inp {
+          margin-top: 60px;
+          position: relative;
+          .number_form_label {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: #4f537a;
+            margin-bottom: 15px;
+
+            @media (max-width: 500px) {
+              font-size: 12px;
+            }
+          }
+          .number_inp {
+            width: 100%;
+
+            input {
+              width: 100%;
+              border: 1px solid #c1c1ea;
+              border-radius: 500px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              padding: 12px 40px 12px 15px;
+              outline-color: #ed7b30;
+            }
+            .inside_inp {
+              position: absolute;
+              top: 42px;
+              right: 15px;
+              border: none;
+              background: transparent;
+              img {
+                width: 35px;
+                height: 39px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .your_otp_form {
+          margin-top: 40px;
+          position: relative;
+
+          .your_otp_label {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: #4f537a;
+            margin-bottom: 15px;
+
+            @media (max-width: 500px) {
+              font-size: 12px;
+            }
+          }
+
+          .number_inp {
+            width: 100%;
+            input {
+              width: 100%;
+              border: 1px solid #c1c1ea;
+              border-radius: 500px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              padding: 12px 15px;
+              outline-color: #ed7b30;
+              position: relative;
+              &::placeholder {
+                position: absolute;
+                top: 15px;
+              }
+            }
+          }
+          .inside_inp {
+            position: absolute;
+            top: 48px;
+            right: 20px;
+          }
+          .resend_otp_div {
+            color: #193b68;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: end;
+            padding-top: 6px;
+            padding-right: 4px;
+            .resend {
+              color: #ed7b30;
+              cursor: pointer;
+            }
+          }
+          .otp_timer {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;
+            color: #ed7b30;
+            text-align: end;
+            padding-top: 5px;
+          }
+        }
+        .sign_btn_div {
+          width: 100%;
+          margin-top: 70px;
+
+          .sign_btn {
+            width: 100%;
+            background: #ed7b30;
+            border-radius: 500px;
+            border: none;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 142%;
+            color: #ffffff;
+            padding: 12px 0px;
+
+            @media (max-width: 500px) {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .account_do_not {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #545454;
+          text-align: center;
+          padding-top: 20px;
+
+          @media (max-width: 500px) {
+            font-size: 12px;
+          }
+
+          .signup_link {
+            color: #ed7b30;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .main {
+    .main-div {
+      .patient_login {
+        .login_right {
+          padding-top: 28px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .main {
+    .main-div {
+      .patient_login {
+        gap: 32px;
+        .login_right {
+          padding-top: 28px;
+          .login_content {
+            margin-bottom: 15px;
+          }
+          .number_form_inp {
+            margin-top: 25px;
+          }
+          .your_otp_form {
+            margin-top: 20px;
+          }
+          .sign_btn_div {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .main {
+    .main-div {
+      .patient_login {
+        gap: 16px;
+        .login_left {
+          img {
+            height: -webkit-fill-available;
+          }
+        }
+        .login_right {
+          padding-top: 0px;
+          .login_content {
+            margin-bottom: 0px;
+            margin-top: 15px;
+          }
+          .number_form_inp {
+            margin-top: 15px;
+            .number_form_label {
+              margin-bottom: 8px;
+            }
+            .number_inp {
+              .inside_inp {
+                top: 34px;
+                right: 10px;
+              }
+            }
+          }
+          .your_otp_form {
+            margin-top: 12px;
+            .your_otp_label {
+              margin-bottom: 8px;
+            }
+            .inside_inp {
+              top: 41px;
+            }
+          }
+          .sign_btn_div {
+            margin-top: 20px;
+          }
+          .account_do_not {
+            padding-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .main-div {
+      .background-design-1 {
+        display: none;
+      }
+      .patient_login {
+        flex-direction: column;
+        .login_left {
+          width: 85%;
+          margin: auto;
+        }
+        .login_right {
+          padding-top: 15px;
+          .your_otp_form {
+            margin-top: 26px;
+          }
+          .login_content {
+            margin-bottom: 26px;
+            // margin-top: 20px;
+          }
+          .sign_btn_div {
+            margin-top: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    .main-div {
+      .patient_login {
+        .login_right {
+          .number_form_inp {
+            .number_inp {
+              input {
+                &::placeholder {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

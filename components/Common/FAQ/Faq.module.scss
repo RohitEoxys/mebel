@@ -1,0 +1,30 @@
+.about_back_img {
+  background-image: url("../../../assets/images/about_back2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .about_us_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+
+    .about_us_heading {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      text-transform: capitalize;
+      color: #292b40;
+    }
+
+    .about_us_subhead {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.06em;
+      text-transform: capitalize;
+      color: #435561;
+      width: 88%;
+    }
+  }
+}

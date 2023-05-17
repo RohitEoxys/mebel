@@ -1,0 +1,252 @@
+@import "../../../styles/variables.scss";
+.main-div {
+  padding: 50px 0px 50px 0px;
+  .background-design-1 {
+    position: absolute;
+    top: 103px;
+    right: 0px;
+    z-index: -1;
+    img {
+      overflow: hidden;
+    }
+  }
+  .heading-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading-text {
+      font-family: $graphitmd;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: -0.3px;
+      text-transform: capitalize;
+      color: #0f2f62;
+    }
+    .preset_div {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      .prset_content {
+        button {
+          background: #ed7b30;
+          border-radius: 500px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+          text-transform: capitalize;
+          color: #ffffff;
+          border: none;
+          padding: 10px 15px;
+        }
+      }
+      .consult-view {
+        position: relative;
+        button {
+          border: 1px solid transparent;
+          background-color: #ed7b30;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          border-radius: 500px;
+          padding: 5px 10px 5px 5px;
+          gap: 7px;
+          .icon_sec {
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .btn-txt {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .first-detail-div {
+    display: flex;
+    .name-sec,
+    .id-sec,
+    .age-sec {
+      margin-right: 50px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #575a78;
+
+      .title {
+        color: #575a78;
+      }
+      .separator {
+        color: #7e83a7;
+      }
+
+      .data {
+        color: #7e83a7;
+      }
+    }
+  }
+  .table-div {
+    padding-bottom: 30px;
+    margin-top: 22px;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .image_not_foud {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+  .main_container {
+    width: 100%;
+    thead {
+      background: #0f2f62;
+      tr {
+        th {
+          text-align: left;
+          padding: 15px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          font-family: "Poppins";
+          font-style: normal;
+          color: white;
+          border-right: 1px solid #fff;
+        }
+        th:nth-child(1) {
+          border-top-left-radius: 6px;
+        }
+        th:last-child {
+          border-top-right-radius: 6px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        min-width: 40%;
+        td {
+          padding: 10px 8px;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 21px;
+          vertical-align: middle;
+          padding-left: 30px;
+          border-bottom: 1px solid #dcdcdc;
+          border-left: 1px solid #dcdcdc;
+          color: #7e83a7;
+          select {
+            width: 100%;
+            border: 1px solid transparent;
+            outline: none;
+            color: #7e83a7;
+          }
+        }
+      }
+
+      td:last-child {
+        border-right: 1px solid #dcdcdc;
+      }
+
+      tr:last-child {
+        td:last-child {
+          border-bottom-right-radius: 10px;
+        }
+        td:nth-child(1) {
+          border-bottom-left-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-div {
+    padding: 20px;
+    .heading-div {
+      .heading-text {
+        font-size: 24px;
+      }
+    }
+
+    .first-detail-div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .table-div {
+      padding-bottom: 30px;
+      margin-top: 22px;
+      overflow: hidden;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        height: 7px;
+        display: block;
+      }
+
+      &::-webkit-scrollbar-track {
+        border: 1px solid #dfdfdf;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #ed7b30;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    }
+    .main_container {
+      width: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main-div {
+    .heading-div {
+      .heading-text {
+        font-size: 20px;
+      }
+      .preset_div {
+        .consult-view {
+          button {
+            padding: 5px;
+            font-size: 12px;
+            .icon_sec {
+              height: 20px;
+              width: 20px;
+              border-radius: 20px;
+              img {
+                height: 15px;
+                width: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .first-detail-div {
+    }
+    .table-div {
+    }
+    .main_container {
+    }
+  }
+}

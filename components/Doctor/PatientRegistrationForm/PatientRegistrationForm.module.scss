@@ -1,0 +1,150 @@
+@import "../../../styles/variables.scss";
+
+.background-design-1 {
+  position: absolute;
+  top: 84px;
+  right: 0px;
+  z-index: -1;
+  img {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.registration_div {
+  display: flex;
+  margin: 50px 0px 50px 0px;
+  justify-content: center;
+
+  .reg-details {
+    display: flex;
+
+    .reg_img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .registration_img_res {
+    display: none;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .reg-details2 {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 425px) {
+      width: 100%;
+    }
+    .registration_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .patient_form_head {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 43px;
+        color: #0f2f62;
+        margin-bottom: 15px;
+        font-family: $graphitmd;
+
+        @media (max-width: 992px) {
+          font-size: 22px;
+          margin-bottom: unset;
+        }
+      }
+      .enter_details {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #7e83a7;
+
+        @media (max-width: 992px) {
+          font-size: 12px;
+        }
+
+        @media screen and (max-width: 426px) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
+
+  .personal {
+    width: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0f2f62;
+    margin-left: 10px;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  .medical {
+    width: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0f2f62;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.slider {
+  height: 8px;
+  background-color: #ed7b30;
+  margin-top: 15px;
+  border-radius: 20px;
+  width: 90%;
+  transition: all 200ms ease;
+}
+
+.light_slider {
+  height: 8px;
+  background-color: #e9ccb9;
+  margin-top: 15px;
+  border-radius: 20px;
+  width: 90%;
+  transition: all 200ms ease-in-out;
+}
+
+.activeText {
+  color: #ed7b30 !important;
+  transition: all 200ms ease;
+}

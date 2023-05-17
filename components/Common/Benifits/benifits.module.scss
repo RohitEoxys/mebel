@@ -1,0 +1,204 @@
+.first_body_div {
+  background-image: url(/_next/static/media/about_back2.71b02db0.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .first_body_content {
+    display: flex;
+    align-items: center;
+    // padding-top: 20px;
+    height: 300px;
+    .doctor_contant {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 80px;
+      text-transform: capitalize;
+      color: #292b40;
+      .welcome_mebel {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ed7b30;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        @media screen and (max-width: 550px) {
+          padding: 0 5px;
+          font-size: 19px;
+        }
+        @media screen and (max-width: 550px) {
+          font-size: 17px;
+        }
+        @media screen and (max-width: 350px) {
+          font-size: 14px;
+        }
+        .minus_div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .minus {
+            width: 10px;
+            height: 4px;
+            background: #ed7b30;
+          }
+          .minus_long {
+            width: 100px;
+            height: 4px;
+            background: #ed7b30;
+          }
+        }
+      }
+      .feel_better {
+        font-size: 40px;
+        .health_care {
+          font-weight: 700;
+          font-size: 40px;
+          color: #ed7b30;
+          @media screen and (max-width: 380px) {
+            font-size: 36px;
+          }
+          @media screen and (max-width: 350px) {
+            font-size: 32px;
+          }
+        }
+        @media screen and (max-width: 550px) {
+          padding: 0 5px;
+          line-height: 60px;
+          font-size: 40px;
+          padding-top: 10px;
+        }
+        @media screen and (max-width: 380px) {
+          line-height: 55px;
+          font-size: 36px;
+        }
+        @media screen and (max-width: 350px) {
+          font-size: 32px;
+        }
+      }
+      .better_para_one {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #6d655f;
+      }
+    }
+  }
+}
+// 12312313213222222222222222222222222222222222222222222222
+.mebelBoxSpace {
+  @media screen and (max-width: 767px) {
+    padding: 30px 20px 0px 20px;
+  }
+}
+.patient_benefits_div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15px;
+  padding-bottom: 60px;
+  @media screen and (max-width: 991px) {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 2px 20px 25px 20px;
+  }
+  .benefits_of_patient {
+    width: 100%;
+    .patient_head {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 26px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ed7b30;
+    }
+    .mebel_platform {
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 70px;
+      text-transform: capitalize;
+      color: #292b40;
+      padding-top: 10px;
+      @media screen and (max-width: 1199px) {
+        font-size: 34px;
+        line-height: 49px;
+        padding-top: 5px;
+      }
+      @media screen and (max-width: 991px) {
+        padding-top: 15px;
+      }
+      .mebel_orange {
+        color: #ed7b30;
+      }
+    }
+    .convenint_div {
+      padding-top: 15px;
+      @media screen and (max-width: 1199px) {
+        padding-top: 5px;
+      }
+      .check_with_label {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 3px;
+        @media screen and (max-width: 1199px) {
+          padding: 8px 3px;
+        }
+        @media screen and (max-width: 991px) {
+          padding: 15px 3px;
+        }
+        @media screen and (max-width: 500px) {
+          padding: 10px 3px;
+        }
+        .listing_chexkbox {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: #898989;
+        }
+      }
+    }
+  }
+  .patient_collage_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (max-width:767px) {
+      padding-top: 20px;
+    }
+    .benefits_img1 {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+      }
+    }
+    .small_imgs_div {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
+      .benefits_img2 {
+        width: 100%;
+        img {
+          width: 100%;
+          border-radius: 25px;
+        }
+      }
+      .benefits_img3 {
+        width: 100%;
+        img {
+          width: 100%;
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+}

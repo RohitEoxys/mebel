@@ -1,0 +1,251 @@
+.thanku_background {
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 10px;
+  .cornor_img_div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .main-div {
+    padding-top: 60px;
+    .img-div {
+      text-align: center;
+      width: 100%;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .thanku_head {
+      text-align: center;
+      font-family: "Russo One" !important;
+      font-weight: 800;
+      .thanku_word {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 102px;
+        line-height: 123px;
+        color: #0f2f62;
+      }
+    }
+    .thanku_content {
+      text-align: center;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 29px;
+      color: #535672;
+      border-bottom: 1px solid #b5b9db;
+      width: 80%;
+      margin: auto;
+      .thanku_paragraph {
+        width: 60%;
+        margin-inline: auto;
+        padding: 7px 0 35px 0;
+      }
+    }
+    .data-div {
+      width: 550px;
+      margin: 30px auto;
+      line-height: 35px;
+      padding: 0% 10% 0% 10%;
+
+      .data_1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .appoint {
+          width: 50%;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: capitalize;
+          color: #0f2f62;
+        }
+        .date {
+          width: 50%;
+          text-align: start;
+          padding-left: 35px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: capitalize;
+          color: #0f2f62;
+        }
+      }
+      .consult {
+        display: flex;
+        width: 200%;
+        align-items: center;
+
+        .appoint {
+          width: 25%;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: capitalize;
+          color: #0f2f62;
+        }
+
+        .consultType {
+          width: 50%;
+          text-align: start;
+          padding-left: 35px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          text-transform: capitalize;
+          color: #0f2f62;
+        }
+      }
+    }
+    .button_div {
+      margin-bottom: 49px;
+      text-align: center;
+      .thanku_btn {
+        padding: 10px 55px;
+        border: none;
+        background: #ed7b30;
+        border-radius: 200px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+      }
+    }
+    .scan_with_border {
+      border-bottom: 1px solid #b5b9db;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 50px;
+      .scan-div {
+        text-align: center;
+        .scan-div-text {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 22px;
+          text-transform: capitalize;
+          color: #55616c;
+          padding-bottom: 35px;
+          margin-bottom: 0;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .thanku_background {
+    .main-div {
+      .img-div {
+        img {
+          width: 30%;
+        }
+      }
+      .thanku_head {
+        .thanku_word {
+          font-size: 90px;
+        }
+      }
+      .data-div {
+        width: 450px;
+      }
+      .thanku_content {
+        .thanku_paragraph {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .thanku_background {
+    .main-div {
+      .data-div {
+        width: 400px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .thanku_background {
+    .main-div {
+      .thanku_head {
+        .thanku_word {
+          font-size: 75px;
+        }
+      }
+      .data-div {
+        width: 350px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .thanku_background {
+    .main-div {
+      .thanku_head {
+        .thanku_word {
+          font-size: 65px;
+        }
+      }
+      .data-div {
+        width: 300px;
+        .data_1 {
+          .appoint {
+            width: 45%;
+          }
+          .date {
+            width: 51%;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .thanku_background {
+    .main-div {
+      .thanku_head {
+        .thanku_word {
+          font-size: 50px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 315px) {
+  .thanku_background {
+    .main-div {
+      .thanku_head {
+        .thanku_word {
+          font-size: 48px;
+          line-height: 80px;
+        }
+      }
+      .data-div {
+        width: 267px;
+        .data_1 {
+          .appoint {
+            width: 45%;
+            font-size: 12px;
+          }
+          .date {
+            width: 55%;
+            padding-left: 15px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

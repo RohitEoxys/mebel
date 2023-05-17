@@ -1,0 +1,45 @@
+.tmplt_2 {
+  padding: 25px;
+  .nm_scn {
+    color: #ed7b30;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .msg_scn {
+    font-weight: 300;
+    color: #55616c;
+    font-size: 13px;
+  }
+  .all_dtls_hdr {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .dtls_crd {
+    height: 180px;
+    background-color: #fff5ee;
+    .apntmt_dtls {
+      display: flex;
+      padding: 15px 0px 0px 15px;
+      .apntmt_id_dtls {
+        width: 50%;
+        font-weight: 300;
+        color: #292b40;
+      }
+      .apnt_id_id {
+        color: #292b40;
+        font-weight: 500;
+      }
+    }
+  }
+  .qr_prt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    .msg_qr {
+      font-weight: 300;
+      font-size: 13px;
+    }
+  }
+}

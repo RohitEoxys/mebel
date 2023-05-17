@@ -1,0 +1,255 @@
+@import "../../../styles/variables.scss";
+
+.profile {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-top: 35px;
+  position: relative;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.main_container {
+  &-top {
+    display: flex;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-left {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 10px;
+      margin: 15px;
+      padding: 10px;
+      position: relative;
+
+      @media (max-width: 1199px) {
+        width: 40%;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+      }
+
+      &-icon {
+        margin-top: 28px;
+        z-index: 1;
+        position: relative;
+        img {
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      h1 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 21px;
+        color: #193b68;
+        font-family: $graphitmd;
+      }
+
+      h6 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 17px;
+        font-family: $secondaryFont;
+        color: #4e5a6a;
+
+        @media (max-width: 1262px) {
+          text-align: center;
+          line-height: 23px;
+        }
+      }
+
+      button {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 9px 26px !important;
+
+        @media (max-width: 1334px) {
+          min-width: fit-content;
+        }
+        @media (max-width: 1466px) {
+          font-size: small;
+        }
+      }
+    }
+
+    &-right {
+      border-radius: 10px;
+      margin: 15px;
+      padding: 18px;
+      width: 68%;
+      background-color: #fff;
+      z-index: 1;
+
+      @media (max-width: 1199px) {
+        width: 60%;
+      }
+
+      @media (max-width: 992px) {
+        width: 100%;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
+        margin-bottom: 17px;
+        color: #193b68;
+        font-family: $secondaryFont;
+      }
+      &-table {
+        height: 85%;
+      }
+    }
+  }
+  &_middle {
+    display: flex;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-left {
+      border-radius: 10px;
+      margin: 15px;
+      padding: 18px;
+      width: 60%;
+      background-color: #fff;
+      max-height: 400px;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #c5c5c5;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #ed7b30;
+      }
+
+      @media (max-width: 1250px) {
+        width: 60%;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17px;
+        color: #193b68;
+        font-family: $secondaryFont;
+      }
+    }
+
+    &-right {
+      border-radius: 10px;
+      margin: 15px;
+      padding: 18px;
+      width: 40%;
+      background-color: #fff;
+      max-height: 400px;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #c5c5c5;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #ed7b30;
+      }
+
+      @media (max-width: 1250px) {
+        width: 40%;
+      }
+      @media (max-width: 992px) {
+        width: 100%;
+        box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+.background-design-1 {
+  position: absolute;
+  top: 0px;
+  right: -33px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.background-design-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @media (max-width: 1024px) {
+    right: 0;
+    left: 0;
+  }
+}
+
+.make_appointment_btn {
+  @media (max-width: 1024px) {
+    max-width: fit-content;
+  }
+}
+
+.patient_edit_icon {
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.btn_main {
+  justify-content: center;
+  margin-top: 40px;
+
+  &_btn {
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: #ffffff !important;
+    padding: 13px 54px !important;
+    z-index: 1 !important;
+  }
+}
+
+.firstName {
+  text-transform: capitalize;
+}

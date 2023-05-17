@@ -1,0 +1,29 @@
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  button {
+    background-color: #ed7b30;
+    border-radius: 500px;
+    border: none;
+    padding: 9px 20px;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 28px;
+
+    &:disabled,
+    &:hover:disabled,
+    &:active:disabled {
+      background: #ccc;
+      color: #979797;
+      border-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      background-color: #f35709;
+      transition: all 0.2s ease;
+    }
+  }
+}

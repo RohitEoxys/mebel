@@ -1,0 +1,62 @@
+.switch {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  width: 60px;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch-label:before,
+.switch-label:after {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.switch-label:before {
+  content: attr(data-off);
+  left: 5px;
+}
+
+.switch-label:after {
+  content: attr(data-on);
+  right: 5px;
+}
+
+.switch-input:checked + .switch-label {
+  background-color: #6fbf43;
+}
+
+.switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease;
+}
+
+.switch-input:checked + .switch-label .switch-handle {
+  left: 32px;
+}

@@ -1,0 +1,71 @@
+@import "../../../../styles/variables.scss";
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+  gap: 10px;
+
+  @media (max-width: 500px) {
+    margin-top: 15px;
+  }
+
+  &_clear {
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 44%;
+      margin: auto;
+    }
+
+    button {
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #193b68;
+      border-radius: 2px;
+      padding: 8px;
+      color: #193b68;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: $tertiairyFont;
+
+      &:hover {
+        background-color: #caced4;
+      }
+    }
+  }
+  &_select {
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 44%;
+      margin: auto;
+    }
+    button {
+      width: 100%;
+      background-color: #0f2f62;
+      border: 1px solid #193b68;
+      border-radius: 2px;
+      padding: 8px;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: $tertiairyFont;
+
+      &:hover {
+        background-color: #1d4c97;
+      }
+
+      @media (max-width: 550px) {
+      }
+    }
+  }
+}
+.next_bt,
+.prev_bt {
+  cursor: pointer;
+}
+.prev_bt_disable {
+  pointer-events: none;
+  opacity: 0.4;
+}
